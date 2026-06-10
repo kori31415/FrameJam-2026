@@ -1,21 +1,74 @@
 [gd_scene format=3 uid="uid://bkkng2ner2ff1"]
 
 [ext_resource type="Script" uid="uid://ch3tsdonuffk6" path="res://Player_Character.gd" id="1_cwt80"]
-[ext_resource type="Texture2D" uid="uid://8f6cys62b6sw" path="res://icon.svg" id="2_4g0oj"]
+[ext_resource type="Texture2D" uid="uid://ckpa4ho5chvnv" path="res://Arrow Placeholder.png" id="2_cwt80"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_udkbk"]
 size = Vector2(64, 64)
 
-[node name="Node2D" type="Node2D" unique_id=1179221088]
+[sub_resource type="AtlasTexture" id="AtlasTexture_4g0oj"]
+atlas = ExtResource("2_cwt80")
+region = Rect2(51, 0, 16, 16)
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1789930929]
+[sub_resource type="AtlasTexture" id="AtlasTexture_udkbk"]
+atlas = ExtResource("2_cwt80")
+region = Rect2(34, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e0b67"]
+atlas = ExtResource("2_cwt80")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m6eui"]
+atlas = ExtResource("2_cwt80")
+region = Rect2(17, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cart1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4g0oj")
+}],
+"loop": true,
+"name": &"Face_Down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_udkbk")
+}],
+"loop": true,
+"name": &"Face_Left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e0b67")
+}],
+"loop": true,
+"name": &"Face_Right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m6eui")
+}],
+"loop": true,
+"name": &"Face_Up",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1789930929]
 script = ExtResource("1_cwt80")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1755353254]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1755353254]
 position = Vector2(32, 32)
 shape = SubResource("RectangleShape2D_udkbk")
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=2146135057]
+[node name="Animations" type="AnimatedSprite2D" parent="." unique_id=787250391]
+texture_filter = 1
 position = Vector2(32, 32)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_4g0oj")
+sprite_frames = SubResource("SpriteFrames_cart1")
+animation = &"Face_Down"
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1179221088]

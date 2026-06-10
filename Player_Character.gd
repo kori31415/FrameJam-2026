@@ -1,21 +1,28 @@
 extends CharacterBody2D
 
-const tile_size = 64
+@onready var _animation_player = $Animations
+
+const tile_size = 16
 const move_speed = 0.5
 var moving = false
 var input_direction
 
 func _physics_process(delta: float) -> void:
-	input_direction = Vector2.ZERO
-	if Input.is_action_just_pressed("Left"):
-		input_direction = Vector2.LEFT
-	elif Input.is_action_just_pressed("Right"):
-		input_direction = Vector2.RIGHT
-	elif Input.is_action_just_pressed("Up"):
-		input_direction = Vector2.UP
-	elif Input.is_action_just_pressed("Down"):
-		input_direction = Vector2.DOWN
-	move()
+	if not moving:
+		input_direction = Vector2.ZERO
+		if Input.is_action_just_pressed("Left"):
+			input_direction = Vector2.LEFT
+			_animation_player.play("Face_Left")
+		elif Input.is_action_just_pressed("Right"):
+			input_direction = Vector2.RIGHT
+			_animation_player.play("Face_Right")
+		elif Input.is_action_just_pressed("Up"):
+			input_direction = Vector2.UP
+			_animation_player.play("Face_Up")
+		elif Input.is_action_just_pressed("Down"):
+			input_direction = Vector2.DOWN
+			_animation_player.play("Face_Down")
+		move()
 
 func move():
 	if input_direction:
