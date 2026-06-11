@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Actions" format=3 uid="uid://b2ek8ebhs3p58"]
+
+[ext_resource type="Script" uid="uid://b3k6k30l5udjo" path="res://Scripts/actions.gd" id="1_d7jqg"]
+
+[resource]
+script = ExtResource("1_d7jqg")
+name = "Buffs"
+description = "Buffs all Future Attacks by 5 (1 less for each echo)"
+buff = 5
+echo_incremental = 1
+metadata/_custom_type_script = "uid://b3k6k30l5udjo"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Actions" format=3 uid="uid://b7rf70lopd4ph"]
+
+[ext_resource type="Script" uid="uid://b3k6k30l5udjo" path="res://Scripts/actions.gd" id="1_53lmt"]
+
+[resource]
+script = ExtResource("1_53lmt")
+name = "Attack"
+description = "Deal 10 Damge (Minus 2 Per Echo)"
+damage = 10
+echo_incremental = 2
+metadata/_custom_type_script = "uid://b3k6k30l5udjo"

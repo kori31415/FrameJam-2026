@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ca0rjix35ymor"]
 
-[ext_resource type="Script" uid="uid://ckbgdfj0l6gn7" path="res://battle_ui.gd" id="1_7dmgn"]
+[ext_resource type="Script" uid="uid://ckbgdfj0l6gn7" path="res://Scripts/battle_ui.gd" id="1_x7gwg"]
 
 [node name="Control" type="Control" unique_id=1760235689]
 layout_mode = 3
@@ -10,7 +10,7 @@ offset_right = 0.12799072
 offset_bottom = -0.22399902
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_7dmgn")
+script = ExtResource("1_x7gwg")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=159047750]
 layout_mode = 1

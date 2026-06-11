@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Actions" format=3 uid="uid://cg21if0oiqj4s"]
+
+[ext_resource type="Script" uid="uid://b3k6k30l5udjo" path="res://Scripts/actions.gd" id="1_evpl6"]
+
+[resource]
+script = ExtResource("1_evpl6")
+name = "Defend"
+description = "Defend for 10 (2 Less For Each Echo)"
+defense = 10
+echo_incremental = 2
+metadata/_custom_type_script = "uid://b3k6k30l5udjo"

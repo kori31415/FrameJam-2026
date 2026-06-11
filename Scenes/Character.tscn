@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bkkng2ner2ff1"]
 
-[ext_resource type="Script" uid="uid://ch3tsdonuffk6" path="res://Player_Character.gd" id="1_cwt80"]
-[ext_resource type="Texture2D" uid="uid://ckpa4ho5chvnv" path="res://Arrow Placeholder.png" id="2_cwt80"]
+[ext_resource type="Script" uid="uid://ch3tsdonuffk6" path="res://Scripts/Player_Character.gd" id="1_cwt80"]
+[ext_resource type="Texture2D" uid="uid://ckpa4ho5chvnv" path="res://Sprites/Arrow Placeholder.png" id="2_cwt80"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_udkbk"]
 size = Vector2(64, 64)
