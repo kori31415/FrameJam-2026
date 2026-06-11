@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://cnbou0m0mtdin"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_1vwrx"]
+
+[resource]
+script = ExtResource("1_1vwrx")
+lines = Array[String](["You put the Cassette in the Cassette Player.", "The screen turned on."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

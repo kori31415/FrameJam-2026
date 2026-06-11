@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://dobullqus0xa"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_qsivs"]
+
+[resource]
+script = ExtResource("1_qsivs")
+lines = Array[String](["You picked up a Cassette."])
+item_to_give = "Cassette"
+metadata/_custom_type_script = "uid://butavhetddgg6"

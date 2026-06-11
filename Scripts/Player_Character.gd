@@ -7,6 +7,8 @@ var move_speed = 0.5
 var moving = false
 var input_direction
 
+var can_move : bool = true
+
 func _physics_process(delta: float) -> void:
 	if not moving:
 		input_direction = Vector2.ZERO
@@ -22,7 +24,8 @@ func _physics_process(delta: float) -> void:
 		elif Input.is_action_pressed("Down"):
 			input_direction = Vector2.DOWN
 			_animation_player.play("Face_Down")
-		move()
+		if can_move:
+			move()
 	if Input.is_action_just_pressed("Cancel"):
 		if move_speed == 0.5:
 			move_speed = 0.25
@@ -41,3 +44,6 @@ func move():
 
 func movefalse():
 	moving = false
+
+func toggle_movement (toggle : bool):
+	can_move = toggle

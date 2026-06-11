@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ch3tsdonuffk6" path="res://Scripts/Player_Character.gd" id="1_cwt80"]
 [ext_resource type="Texture2D" uid="uid://ckpa4ho5chvnv" path="res://Sprites/Arrow Placeholder.png" id="2_cwt80"]
+[ext_resource type="Script" uid="uid://bc3syc4b67tt6" path="res://Scripts/Dialogue/dialogue_controller.gd" id="3_677pu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_udkbk"]
 size = Vector2(64, 64)
@@ -57,6 +58,18 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v7dgu"]
+bg_color = Color(0, 0, 0, 0.13333334)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vdqda"]
+bg_color = Color(0.30865884, 0.21663946, 0.13413626, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xloa1"]
+bg_color = Color(0.39468947, 0.26895013, 0.21076804, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4b18b"]
+font_size = 18
+
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1789930929]
 script = ExtResource("1_cwt80")
 
@@ -72,3 +85,65 @@ sprite_frames = SubResource("SpriteFrames_cart1")
 animation = &"Face_Down"
 
 [node name="Node2D" type="Node2D" parent="." unique_id=1179221088]
+
+[node name="DialogueController" type="Node" parent="." unique_id=1982646278]
+script = ExtResource("3_677pu")
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=86638486]
+
+[node name="DialogueScreen" type="Panel" parent="HUD" unique_id=711509433]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_v7dgu")
+
+[node name="DialogueBox" type="Panel" parent="HUD/DialogueScreen" unique_id=1190081575]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -550.0
+offset_top = -217.0
+offset_right = 550.0
+offset_bottom = -17.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_vdqda")
+
+[node name="BG" type="Panel" parent="HUD/DialogueScreen/DialogueBox" unique_id=1136094212]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -545.0
+offset_top = -95.0
+offset_right = 545.0
+offset_bottom = 95.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xloa1")
+
+[node name="Name" type="Label" parent="HUD/DialogueScreen/DialogueBox/BG" unique_id=2072555861]
+layout_mode = 1
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Name"
+
+[node name="Dialogue" type="Label" parent="HUD/DialogueScreen/DialogueBox/BG" unique_id=201005672]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 6.0
+offset_top = 25.0
+offset_right = -11.0
+offset_bottom = 126.0
+grow_horizontal = 2
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac molestie lacus. Phasellus ante justo, porttitor et interdum quis, tempus convallis diam. Nullam nec euismod ligula, a tempus nisl. Vivamus ex orci, bibendum ac porttitor a, auctor ut neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie neque a enim aliquet fringilla. Etiam ut mauris felis. Duis hendrerit volutpat risus ac tempor. Sed molestie auctor sapien."
+label_settings = SubResource("LabelSettings_4b18b")
+autowrap_mode = 2
