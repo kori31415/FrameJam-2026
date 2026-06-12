@@ -15,6 +15,18 @@ run/main_scene="uid://bkkng2ner2ff1"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://Sprites/icon.svg"
 
+[display]
+
+window/size/viewport_width=240
+window/size/viewport_height=160
+window/size/mode=2
+window/size/resizable=false
+window/stretch/scale=8.0
+
+[editor]
+
+movie_writer/movie_file="C:/Users/korik/Videos/Example.avi"
+
 [input]
 
 ui_accept={
@@ -71,4 +83,5 @@ Menu={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"

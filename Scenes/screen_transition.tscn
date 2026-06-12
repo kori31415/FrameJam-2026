@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bpbjgd65itwt5"]
+
+[ext_resource type="Script" uid="uid://01us8fuwx24h" path="res://Scripts/screen_transition.gd" id="1_w0r0h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u83yi"]
+size = Vector2(13, 13)
+
+[node name="Screen Transition" type="Area2D" unique_id=79034028]
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("1_w0r0h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=926151400]
+shape = SubResource("RectangleShape2D_u83yi")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

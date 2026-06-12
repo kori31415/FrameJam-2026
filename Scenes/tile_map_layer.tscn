@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c1mxfy5g3b1fk"]
+
+[ext_resource type="Texture2D" uid="uid://d16hx5odfyvbg" path="res://Sprites/Tile_Set Placeholder.png" id="1_qbaa6"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8cujs"]
+texture = ExtResource("1_qbaa6")
+0:0/0 = 0
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_tto40"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_8cujs")
+
+[node name="TileMapLayer" type="TileMapLayer" unique_id=1341883271]
+tile_set = SubResource("TileSet_tto40")
