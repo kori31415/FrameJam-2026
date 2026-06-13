@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://crk4ngo3d11et"]
+
+[ext_resource type="Script" uid="uid://ct87blxoqivk6" path="res://Scripts/room_loader.gd" id="1_wodgj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gmxdy"]
+size = Vector2(24, 24)
+
+[node name="Room Loader" type="Area2D" unique_id=1820529224]
+collision_layer = 0
+collision_mask = 8
+script = ExtResource("1_wodgj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=917804890]
+shape = SubResource("RectangleShape2D_gmxdy")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

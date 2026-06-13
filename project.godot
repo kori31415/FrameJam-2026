@@ -15,6 +15,10 @@ run/main_scene="uid://bkkng2ner2ff1"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://Sprites/icon.svg"
 
+[autoload]
+
+Room_Loader="*uid://c51gn60tw34jf"
+
 [display]
 
 window/size/viewport_width=240

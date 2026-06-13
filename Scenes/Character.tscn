@@ -60,8 +60,8 @@ animations = [{
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1789930929]
 light_mask = 512
 visibility_layer = 512
-collision_layer = 7
-collision_mask = 7
+collision_layer = 15
+collision_mask = 15
 script = ExtResource("1_cwt80")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1755353254]

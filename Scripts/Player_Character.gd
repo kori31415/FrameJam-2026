@@ -5,7 +5,7 @@ extends CharacterBody2D
 
 const tile_size = 16
 var ray_length = tile_size
-var move_speed = 0.5
+var move_speed = 0.1
 var moving = false
 var input_direction
 
