@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://dfn85stjvcrrp"]
+
+[ext_resource type="Script" uid="uid://dbgkbtvvcwv8a" path="res://Scripts/room_control_node.gd" id="1_jxu42"]
+[ext_resource type="PackedScene" uid="uid://ywnk7mmcwohx" path="res://Scenes/Rooms/F2/guest_bedroom_2.tscn" id="2_oth51"]
+[ext_resource type="PackedScene" uid="uid://csyng8skgguvy" path="res://Scenes/Rooms/F2/entrance_hall_f2.tscn" id="2_wjc5h"]
+[ext_resource type="PackedScene" uid="uid://bkkng2ner2ff1" path="res://Scenes/character.tscn" id="3_sgw0y"]
+[ext_resource type="PackedScene" uid="uid://cswl3smoh2a6m" path="res://Scenes/Rooms/F2/west_hall_f2.tscn" id="4_sgw0y"]
+[ext_resource type="PackedScene" uid="uid://b46e4tdwhr2fr" path="res://Scenes/Rooms/F2/east_hall_f2.tscn" id="5_lykwf"]
+[ext_resource type="PackedScene" uid="uid://beq6xbqe7cv8a" path="res://Scenes/Rooms/F2/library.tscn" id="5_ud7kf"]
+[ext_resource type="PackedScene" uid="uid://dqpioqjus8jcl" path="res://Scenes/Rooms/F2/drawing_room.tscn" id="6_ud7kf"]
+[ext_resource type="PackedScene" uid="uid://bowewnoojejlm" path="res://Scenes/Rooms/F2/master_bedroom.tscn" id="8_jncqg"]
+[ext_resource type="PackedScene" uid="uid://bnb65oanhpcc4" path="res://Scenes/Rooms/F2/younger_brothers_bedroom.tscn" id="9_xiab4"]
+
+[node name="FullManorF2" type="Node2D" unique_id=428225692]
+
+[node name="Room Control Node" type="Node2D" parent="." unique_id=1822394895]
+script = ExtResource("1_jxu42")
+
+[node name="GuestBedroom3" parent="Room Control Node" unique_id=1171637267 instance=ExtResource("2_oth51")]
+position = Vector2(16, 32)
+rotation = 3.1415925
+
+[node name="GuestBedroom2" parent="Room Control Node" unique_id=1093327516 instance=ExtResource("2_oth51")]
+position = Vector2(-128, 96)
+
+[node name="EastHallF2" parent="Room Control Node" unique_id=894386936 instance=ExtResource("5_lykwf")]
+position = Vector2(-192, 16)
+
+[node name="WestHallF2" parent="Room Control Node" unique_id=1144238135 instance=ExtResource("4_sgw0y")]
+position = Vector2(224, 16)
+
+[node name="EntranceHallF2" parent="Room Control Node" unique_id=1116052001 instance=ExtResource("2_wjc5h")]
+
+[node name="Library" parent="Room Control Node" unique_id=1552232612 instance=ExtResource("5_ud7kf")]
+position = Vector2(240, -64)
+
+[node name="DrawingRoom" parent="Room Control Node" unique_id=1313923809 instance=ExtResource("6_ud7kf")]
+position = Vector2(224, 96)
+
+[node name="MasterBedroom" parent="Room Control Node" unique_id=358944829 instance=ExtResource("8_jncqg")]
+position = Vector2(-336, 96)
+
+[node name="YoungerBrothersBedroom" parent="Room Control Node" unique_id=546816009 instance=ExtResource("9_xiab4")]
+position = Vector2(-352, -112)
+
+[node name="CharacterBody2D" parent="." unique_id=1789930929 instance=ExtResource("3_sgw0y")]
+position = Vector2(120, 56)
