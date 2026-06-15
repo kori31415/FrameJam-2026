@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleData" format=3 uid="uid://3nbcqqujp0fv"]
+
+[ext_resource type="Script" uid="uid://drpabwj04lhvj" path="res://Scripts/Battle Engine/BattleData.cs" id="1_85jet"]
+
+[resource]
+script = ExtResource("1_85jet")
+BattleName = "Test Battle"
+CharacterNames = PackedStringArray("Gisela", "Rat Friend", "Rat Enemy")
+CharacterFiles = PackedStringArray("res://Battles/Test Battle/Characters/Gisela.tres", "res://Battles/Test Battle/Characters/Rat Friend.tres", "res://Battles/Test Battle/Characters/Rat Enemy.tres")
+metadata/_custom_type_script = "uid://drpabwj04lhvj"

@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://ca0rjix35ymor"]
+
+[ext_resource type="Script" uid="uid://ckbgdfj0l6gn7" path="res://Scripts/battle_ui.gd" id="1_x7gwg"]
+
+[node name="Control" type="Control" unique_id=1760235689]
+layout_mode = 3
+anchor_right = 0.611
+anchor_bottom = 0.98800004
+offset_right = 0.12799072
+offset_bottom = -0.22399902
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x7gwg")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=159047750]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.86200005
+anchor_right = 1.0
+anchor_bottom = 1.011
+offset_top = 0.3199463
+offset_bottom = -0.12805176
+
+[node name="Attack" type="Button" parent="HBoxContainer" unique_id=1290770546]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_neighbor_left = NodePath("../Skills")
+focus_neighbor_right = NodePath("../Defend")
+text = "Attack
+"
+
+[node name="Defend" type="Button" parent="HBoxContainer" unique_id=1318029485]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_neighbor_left = NodePath("../Attack")
+focus_neighbor_right = NodePath("../Skills")
+text = "Defend
+"
+
+[node name="Skills" type="Button" parent="HBoxContainer" unique_id=575965070]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_neighbor_left = NodePath("../Defend")
+focus_neighbor_right = NodePath("../Attack")
+text = "Skills
+"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="." unique_id=2064843415]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.78700006
+anchor_right = 1.0
+anchor_bottom = 0.86
+offset_top = 0.3199463
+offset_bottom = 0.3199463
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=589164666]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.1
+
+[connection signal="pressed" from="HBoxContainer/Attack" to="." method="_on_attack_pressed"]
+[connection signal="pressed" from="HBoxContainer/Defend" to="." method="_on_defend_pressed"]
+[connection signal="pressed" from="HBoxContainer/Skills" to="." method="_on_skills_pressed"]

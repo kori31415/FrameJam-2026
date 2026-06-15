@@ -12,12 +12,13 @@ func _process(delta: float) -> void:
 
 
 func _on_attack_pressed() -> void:
-	print("Attack, add attack to queue")
-
+	#print("Attack, add attack to queue")
+	pass
 
 func _on_defend_pressed() -> void:
-	print("Defend, add defense to queue")
-
+	#print("Defend, add defense to queue")
+	pass
 
 func _on_skills_pressed() -> void:
-	print("Open Skill Menu")
+	#print("Open Skill Menu")
+	pass

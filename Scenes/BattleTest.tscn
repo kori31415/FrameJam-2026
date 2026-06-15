@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://pqun2py65qjb"]
+
+[ext_resource type="Script" uid="uid://6v407o06ip7u" path="res://Scripts/BattleTester.cs" id="1_rtnsb"]
+
+[node name="Node" type="Node" unique_id=1598100307]
+script = ExtResource("1_rtnsb")

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="SkillData" format=3 uid="uid://xd6laeyl522p"]
+
+[ext_resource type="Script" uid="uid://6oa3btxau08b" path="res://Scripts/Battle Engine/SkillData.cs" id="1_vxb6u"]
+
+[resource]
+script = ExtResource("1_vxb6u")
+Name = "Defend"
+Description = "Reduce damage taken from the next attack."
+BeginningText = "{character} chose to defend!"
+EndingText = "{character} will take {defense} less damage from the next attack!"
+metadata/_custom_type_script = "uid://6oa3btxau08b"

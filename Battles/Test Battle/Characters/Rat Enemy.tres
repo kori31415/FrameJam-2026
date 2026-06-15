@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Character" format=3 uid="uid://buydbmy0xix0k"]
+
+[ext_resource type="Script" uid="uid://c632y44vfk7ro" path="res://Scripts/Battle Engine/Character.cs" id="1_m13y1"]
+
+[resource]
+script = ExtResource("1_m13y1")
+Name = "Rat Enemy"
+Health = 5
+SkillNames = PackedStringArray("Attack", "Defend")
+SkillFiles = PackedStringArray("res://Battles/Test Battle/Skills/AttackData.tres", "res://Battles/Test Battle/Skills/DefendEffect.cs")
+metadata/_custom_type_script = "uid://c632y44vfk7ro"

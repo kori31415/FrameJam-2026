@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="SkillData" format=3 uid="uid://251v0v86eih7"]
+
+[ext_resource type="Script" uid="uid://6oa3btxau08b" path="res://Scripts/Battle Engine/SkillData.cs" id="1_pmhbt"]
+
+[resource]
+script = ExtResource("1_pmhbt")
+Name = "Attack"
+Description = "Deal damage to target enemy."
+BeginningText = "{character} has chosen to attack {target}!"
+EndingText = "{character} dealt {damage} to {target}!"
+metadata/_custom_type_script = "uid://6oa3btxau08b"
