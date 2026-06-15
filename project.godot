@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="FrameJam 2026"
-run/main_scene="uid://bkkng2ner2ff1"
+run/main_scene="uid://cyc1xr0oxph8r"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://Sprites/icon.svg"
 
 [autoload]
 
 Room_Loader="*uid://c51gn60tw34jf"
+InteractionManager="*uid://cnmr4bpgocd4g"
 
 [display]
 
