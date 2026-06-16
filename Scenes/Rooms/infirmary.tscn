@@ -2,14 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://c1mxfy5g3b1fk" path="res://Scenes/tile_map_layer.tscn" id="1_v3v75"]
 [ext_resource type="Script" uid="uid://ct87blxoqivk6" path="res://Scripts/room_loader.gd" id="2_4wniy"]
-[ext_resource type="Script" uid="uid://c8j0emhfkpymt" path="res://Scripts/Dialogue/dialogue_key.gd" id="3_p2gcq"]
-[ext_resource type="Texture2D" uid="uid://7w1238uunhx7" path="res://Sprites/key_placeholder.png" id="4_vo8d4"]
-[ext_resource type="Script" uid="uid://cj6othlywy1jb" path="res://Interaction/interaction_manager.gd" id="5_u3c0h"]
+[ext_resource type="PackedScene" uid="uid://coyvww4vie8ft" path="res://Interaction/interaction_area.tscn" id="3_v3v75"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v3v75"]
 size = Vector2(128, 128)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_iwobt"]
 
 [node name="Infirmary" type="Node2D" unique_id=776746985]
 
@@ -26,20 +22,8 @@ metadata/_custom_type_script = "uid://ct87blxoqivk6"
 position = Vector2(72, 72)
 shape = SubResource("RectangleShape2D_v3v75")
 
-[node name="TestKey" type="Node2D" parent="." unique_id=110666635]
-script = ExtResource("3_p2gcq")
-
-[node name="Sprite2D" type="Sprite2D" parent="TestKey" unique_id=694015265]
-position = Vector2(40, 24)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("4_vo8d4")
-
-[node name="Interactable" type="Area2D" parent="TestKey" unique_id=1062913975]
-script = ExtResource("5_u3c0h")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TestKey/Interactable" unique_id=954690491]
-position = Vector2(40, 25)
-shape = SubResource("RectangleShape2D_iwobt")
+[node name="InteractionArea" parent="." unique_id=1051170718 instance=ExtResource("3_v3v75")]
+position = Vector2(56, 24)
 
 [connection signal="body_entered" from="room_loader" to="room_loader" method="_on_body_entered"]
 [connection signal="body_exited" from="room_loader" to="room_loader" method="_on_body_exited"]

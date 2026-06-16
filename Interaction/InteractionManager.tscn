@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://cnmr4bpgocd4g"]
-
-[ext_resource type="Script" uid="uid://cj6othlywy1jb" path="res://Interaction/interaction_manager.gd" id="1_p4lj5"]
-
-[node name="InteractionManager" type="Node2D" unique_id=1835084842]
-script = ExtResource("1_p4lj5")
