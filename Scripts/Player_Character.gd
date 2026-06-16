@@ -5,13 +5,13 @@ extends CharacterBody2D
 
 const tile_size = 16
 var ray_length = tile_size
-var move_speed = 0.1
+var move_speed = 0.3
 var moving = false
 var input_direction
 
 var can_move : bool = true
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	if not moving:
 		input_direction = Vector2.ZERO
 		if Input.is_action_pressed("Left"):
