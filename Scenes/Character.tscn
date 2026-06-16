@@ -78,6 +78,12 @@ animation = &"Face_Down"
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1605116458]
 limit_enabled = false
 
-[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1880767530]
+[node name="Wall_Collison_Cast" type="RayCast2D" parent="." unique_id=1880767530]
 target_position = Vector2(0, 16)
 hit_from_inside = true
+
+[node name="Interactable_Cast" type="RayCast2D" parent="." unique_id=94075157]
+target_position = Vector2(0, 16)
+collision_mask = 128
+hit_from_inside = true
+collide_with_areas = true
