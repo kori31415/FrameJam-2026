@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://coyvww4vie8ft" path="res://Interaction/interaction_area.tscn" id="3_v3v75"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v3v75"]
-size = Vector2(128, 128)
+size = Vector2(256, 256)
 
 [node name="Infirmary" type="Node2D" unique_id=776746985]
 
@@ -19,11 +19,11 @@ script = ExtResource("2_4wniy")
 metadata/_custom_type_script = "uid://ct87blxoqivk6"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="room_loader" unique_id=115398060]
-position = Vector2(72, 72)
+position = Vector2(144, 144)
 shape = SubResource("RectangleShape2D_v3v75")
 
 [node name="InteractionArea" parent="." unique_id=1051170718 instance=ExtResource("3_v3v75")]
-position = Vector2(56, 24)
+position = Vector2(144, 48)
 
 [connection signal="body_entered" from="room_loader" to="room_loader" method="_on_body_entered"]
 [connection signal="body_exited" from="room_loader" to="room_loader" method="_on_body_exited"]

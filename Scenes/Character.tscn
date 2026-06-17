@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ckpa4ho5chvnv" path="res://Sprites/Arrow Placeholder.png" id="2_cwt80"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_udkbk"]
-size = Vector2(16, 16)
+size = Vector2(32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4g0oj"]
 atlas = ExtResource("2_cwt80")
@@ -69,21 +69,27 @@ shape = SubResource("RectangleShape2D_udkbk")
 
 [node name="Animations" type="AnimatedSprite2D" parent="." unique_id=787250391]
 texture_filter = 1
-scale = Vector2(0.5, 0.5)
+position = Vector2(-7.1525574e-07, -7.1525574e-07)
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_cart1")
 animation = &"Face_Down"
 
 [node name="Node2D" type="Node2D" parent="." unique_id=1179221088]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1605116458]
+scale = Vector2(2, 2)
 limit_enabled = false
+limit_left = 0
+limit_top = 0
+limit_right = 480
+limit_bottom = 320
 
 [node name="Wall_Collison_Cast" type="RayCast2D" parent="." unique_id=1880767530]
-target_position = Vector2(0, 16)
+target_position = Vector2(0, 32)
 hit_from_inside = true
 
 [node name="Interactable_Cast" type="RayCast2D" parent="." unique_id=94075157]
-target_position = Vector2(0, 16)
+target_position = Vector2(0, 32)
 collision_mask = 128
 hit_from_inside = true
 collide_with_areas = true

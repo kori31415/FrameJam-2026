@@ -4,7 +4,8 @@ extends CharacterBody2D
 @onready var wall_ray_cast = $Wall_Collison_Cast
 @onready var interactable_ray_cast = $Interactable_Cast
 
-const tile_size = 16
+const tile_size = 32
+
 var ray_length = tile_size
 var move_speed = 0.3
 var moving = false

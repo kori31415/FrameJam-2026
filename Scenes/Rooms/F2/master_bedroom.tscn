@@ -15,6 +15,7 @@ script = ExtResource("1_2n0br")
 metadata/_custom_type_script = "uid://ct87blxoqivk6"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="room_loader" unique_id=416337726]
+scale = Vector2(2, 2)
 polygon = PackedVector2Array(8, -72, 152, -72, 152, 8, 216, 8, 216, 120, 8, 120)
 
 [connection signal="body_entered" from="room_loader" to="room_loader" method="_on_body_entered"]
