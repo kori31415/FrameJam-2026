@@ -1,8 +1,10 @@
+class_name	Player
 extends CharacterBody2D
 
 @onready var _animation_player = $Animations
 @onready var wall_ray_cast = $Wall_Collison_Cast
 @onready var interactable_ray_cast = $Interactable_Cast
+@onready var dialogue_controller : DialogueController = $DialogueController
 
 const tile_size = 32
 
@@ -11,10 +13,11 @@ var move_speed = 0.3
 var moving = false
 var input_direction
 
+var can_interact : bool = true
 var can_move : bool = true
 
 func _physics_process(_delta: float) -> void:
-	if not moving:
+	if not moving && can_move:
 		input_direction = Vector2.ZERO
 		if Input.is_action_pressed("Left"):
 			input_direction = Vector2.LEFT
@@ -32,9 +35,12 @@ func _physics_process(_delta: float) -> void:
 			input_direction = Vector2.DOWN
 			adjust_casts()
 			_animation_player.play("Face_Down")
-		elif Input.is_action_just_pressed("Interact") && interactable_ray_cast.is_colliding():
+		elif Input.is_action_just_pressed("Interact") && interactable_ray_cast.is_colliding() && can_interact:
+			can_move = false
+			can_interact = false
 			var collider = interactable_ray_cast.get_collider()
-			collider.test_print()
+			dialogue_controller.set_dialogue(collider.dialogue)
+			
 	if can_move && !wall_ray_cast.is_colliding():
 		move()
 	if Input.is_action_just_pressed("Cancel"):

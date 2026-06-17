@@ -2,7 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://c1mxfy5g3b1fk" path="res://Scenes/tile_map_layer.tscn" id="1_v3v75"]
 [ext_resource type="Script" uid="uid://ct87blxoqivk6" path="res://Scripts/room_loader.gd" id="2_4wniy"]
+[ext_resource type="Script" uid="uid://c8j0emhfkpymt" path="res://Scripts/Dialogue/dialogue_npc.gd" id="3_upskg"]
 [ext_resource type="PackedScene" uid="uid://coyvww4vie8ft" path="res://Interaction/interaction_area.tscn" id="3_v3v75"]
+[ext_resource type="Resource" uid="uid://cnbou0m0mtdin" path="res://NPC & Interactables Dialogue/television_interact.tres" id="4_1lajw"]
+[ext_resource type="Texture2D" uid="uid://7w1238uunhx7" path="res://Sprites/key_placeholder.png" id="4_y73mn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v3v75"]
 size = Vector2(256, 256)

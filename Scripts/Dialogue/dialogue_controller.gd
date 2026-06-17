@@ -3,9 +3,9 @@ extends Node
 
 var current_dialogue : Dialogue
 
-@onready var dialogue_screen : Panel = $"../HUD/DialogueScreen"
-@onready var name_text = $"../HUD/DialogueScreen/DialogueBox/BG/Name"
-@onready var dialogue_text = $"../HUD/DialogueScreen/DialogueBox/BG/Dialogue"
+@onready var dialogue_screen : Panel = $HUD/DialogueScreen
+@onready var name_text = $HUD/DialogueScreen/DialogueBox/BG/Name
+@onready var dialogue_text = $HUD/DialogueScreen/DialogueBox/BG/Dialogue
 
 @onready var player : CharacterBody2D = $".."
 
@@ -21,8 +21,7 @@ func set_dialogue(dialogue : Dialogue):
 	dialogue_screen.visible = true
 	name_text.text = dialogue.npc_name
 	
-	current_line = 0
-	_set_line(dialogue.lines[0])
+	current_line = -1
 	
 	
 
@@ -35,7 +34,8 @@ func _process (delta : float):
 	
 	if Input.is_action_just_pressed("Interact"):
 		if len(current_dialogue.lines) == current_line + 1:
-			
+			player.can_move = true
+			player.can_interact = true
 			close_screen()
 		else:
 			current_line += 1
