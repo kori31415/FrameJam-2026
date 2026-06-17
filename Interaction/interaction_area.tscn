@@ -5,13 +5,10 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c5th6"]
 size = Vector2(16, 16)
 
-[node name="InteractionArea" type="Area2D" unique_id=1051170718]
+[node name="Interactable" type="StaticBody2D" unique_id=2112677672]
 collision_layer = 129
 collision_mask = 129
 script = ExtResource("1_c5th6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=95353225]
 shape = SubResource("RectangleShape2D_c5th6")
-
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
-[connection signal="body_exited" from="." to="." method="_on_body_exited"]

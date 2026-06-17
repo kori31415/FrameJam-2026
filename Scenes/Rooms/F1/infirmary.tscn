@@ -36,6 +36,7 @@ texture = ExtResource("4_y73mn")
 [node name="InteractionArea" parent="DialogueKey" unique_id=1051170718 instance=ExtResource("3_v3v75")]
 position = Vector2(56, 24)
 dialogue = ExtResource("4_1lajw")
+item = true
 
 [connection signal="body_entered" from="room_loader" to="room_loader" method="_on_body_entered"]
 [connection signal="body_exited" from="room_loader" to="room_loader" method="_on_body_exited"]

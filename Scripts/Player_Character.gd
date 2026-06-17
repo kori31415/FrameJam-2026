@@ -35,10 +35,7 @@ func _physics_process(_delta: float) -> void:
 			adjust_casts()
 			_animation_player.play("Face_Down")
 		elif Input.is_action_just_pressed("Interact") && interactable_ray_cast.is_colliding() && can_interact:
-			can_move = false
-			can_interact = false
-			var collider = interactable_ray_cast.get_collider()
-			dialogue_controller.set_dialogue(collider.dialogue)
+			dialouge_handler()
 			
 	if can_move && !wall_ray_cast.is_colliding():
 		move()
@@ -69,3 +66,11 @@ func adjust_casts():
 	wall_ray_cast.force_raycast_update()
 	interactable_ray_cast.target_position = input_direction * ray_length
 	interactable_ray_cast.force_raycast_update()
+
+func dialouge_handler():
+	can_move = false	
+	can_interact = false
+	var collider = interactable_ray_cast.get_collider()
+	dialogue_controller.set_dialogue(collider.dialogue)
+	if collider.item:
+		collider.get_parent().queue_free()
