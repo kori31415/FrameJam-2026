@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ch3tsdonuffk6" path="res://Scripts/Player_Character.gd" id="1_cwt80"]
 [ext_resource type="Texture2D" uid="uid://ckpa4ho5chvnv" path="res://Sprites/Arrow Placeholder.png" id="2_cwt80"]
+[ext_resource type="Script" uid="uid://bc3syc4b67tt6" path="res://Scripts/Dialogue/dialogue_controller.gd" id="3_677pu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_udkbk"]
 size = Vector2(16, 16)
@@ -57,6 +58,21 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_677pu"]
+bg_color = Color(0, 0, 0, 0.47058824)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v7dgu"]
+bg_color = Color(0.30865884, 0.21663946, 0.13413626, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vdqda"]
+bg_color = Color(0.39468947, 0.26895013, 0.21076804, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_677pu"]
+font_size = 11
+
+[sub_resource type="LabelSettings" id="LabelSettings_xloa1"]
+font_size = 11
+
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1789930929]
 light_mask = 512
 visibility_layer = 512
@@ -87,3 +103,77 @@ target_position = Vector2(0, 16)
 collision_mask = 128
 hit_from_inside = true
 collide_with_areas = true
+
+[node name="DialogueController" type="Node" parent="." unique_id=949665655]
+script = ExtResource("3_677pu")
+metadata/_custom_type_script = "uid://bc3syc4b67tt6"
+
+[node name="HUD" type="CanvasLayer" parent="DialogueController" unique_id=169453718]
+
+[node name="DialogueScreen" type="Panel" parent="DialogueController/HUD" unique_id=1965361727]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_right = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_677pu")
+
+[node name="DialogueBox" type="Panel" parent="DialogueController/HUD/DialogueScreen" unique_id=1690360324]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -106.0
+offset_top = -72.0
+offset_right = 106.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_v7dgu")
+
+[node name="BG" type="Panel" parent="DialogueController/HUD/DialogueScreen/DialogueBox" unique_id=630923987]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -98.0
+offset_top = -30.5
+offset_right = 98.0
+offset_bottom = 30.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vdqda")
+
+[node name="Name" type="Label" parent="DialogueController/HUD/DialogueScreen/DialogueBox/BG" unique_id=513236417]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 3.0
+offset_top = 3.5
+offset_right = -141.0
+offset_bottom = 20.5
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 11
+label_settings = SubResource("LabelSettings_677pu")
+
+[node name="Dialogue" type="Label" parent="DialogueController/HUD/DialogueScreen/DialogueBox/BG" unique_id=2116016905]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = -43.5
+offset_right = -4.0
+offset_bottom = -4.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 11
+label_settings = SubResource("LabelSettings_xloa1")
+autowrap_mode = 2
