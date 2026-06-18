@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://b34iqks5sfvid"]
+
+[ext_resource type="Texture2D" uid="uid://mumb4vlt3f6v" path="res://Sprites/lamp_V1.png" id="1_uno5e"]
+[ext_resource type="Texture2D" uid="uid://drqr0ry8ehqwe" path="res://Sprites/NaD6F.png" id="2_vxcd3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qfipa"]
+size = Vector2(32, 32)
+
+[node name="Lamps" type="StaticBody2D" unique_id=560649263]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=621271257]
+shape = SubResource("RectangleShape2D_qfipa")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1003350378]
+texture = ExtResource("1_uno5e")
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1686959290]
+show_behind_parent = true
+light_mask = 3
+position = Vector2(3.8146973e-06, -1.9073486e-06)
+scale = Vector2(0.74999994, 0.75)
+shadow_enabled = true
+texture = ExtResource("2_vxcd3")
