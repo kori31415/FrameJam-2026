@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://ct87blxoqivk6" path="res://Scripts/room_loader.gd" id="2_068c3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qd1mj"]
-size = Vector2(320, 80)
+size = Vector2(640, 160)
 
 [node name="East Hall F1" type="Node2D" unique_id=1665940030]
 
@@ -18,7 +18,7 @@ script = ExtResource("2_068c3")
 metadata/_custom_type_script = "uid://ct87blxoqivk6"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="room_loader" unique_id=959140797]
-position = Vector2(168, 48)
+position = Vector2(336, 96)
 shape = SubResource("RectangleShape2D_qd1mj")
 
 [connection signal="body_entered" from="room_loader" to="room_loader" method="_on_body_entered"]

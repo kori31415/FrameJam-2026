@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://ct87blxoqivk6" path="res://Scripts/room_loader.gd" id="2_mns35"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w67dq"]
-size = Vector2(226, 130)
+size = Vector2(449, 257)
 
 [node name="Servant\'s Quarters" type="Node2D" unique_id=2082426750]
 
@@ -18,7 +18,7 @@ script = ExtResource("2_mns35")
 metadata/_custom_type_script = "uid://ct87blxoqivk6"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="room_loader" unique_id=2022191338]
-position = Vector2(119, 71)
+position = Vector2(239.5, 143.5)
 shape = SubResource("RectangleShape2D_w67dq")
 
 [connection signal="body_entered" from="room_loader" to="room_loader" method="_on_body_entered"]

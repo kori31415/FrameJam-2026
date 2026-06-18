@@ -9,6 +9,7 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v3v75"]
 size = Vector2(128, 128)
+size = Vector2(256, 256)
 
 [node name="Infirmary" type="Node2D" unique_id=776746985]
 
@@ -23,8 +24,10 @@ metadata/_custom_type_script = "uid://ct87blxoqivk6"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="room_loader" unique_id=115398060]
 position = Vector2(72, 72)
+position = Vector2(144, 144)
 shape = SubResource("RectangleShape2D_v3v75")
 
+<<<<<<< HEAD
 [node name="DialogueKey" type="Node2D" parent="." unique_id=746586822]
 script = ExtResource("3_upskg")
 
@@ -37,6 +40,10 @@ texture = ExtResource("4_y73mn")
 position = Vector2(56, 24)
 dialogue = ExtResource("4_1lajw")
 item = true
+=======
+[node name="InteractionArea" parent="." unique_id=1051170718 instance=ExtResource("3_v3v75")]
+position = Vector2(144, 48)
+>>>>>>> 37183175214218b230f723d22bebbe37b0a83e25
 
 [connection signal="body_entered" from="room_loader" to="room_loader" method="_on_body_entered"]
 [connection signal="body_exited" from="room_loader" to="room_loader" method="_on_body_exited"]

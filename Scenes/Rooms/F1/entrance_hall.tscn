@@ -20,7 +20,7 @@ func _process(_delta: float) -> void:
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hj2jd"]
-size = Vector2(224, 288)
+size = Vector2(448, 576)
 
 [node name="Entrance Hall" type="Node2D" unique_id=608629051]
 script = SubResource("GDScript_d1tuh")
@@ -35,12 +35,12 @@ script = ExtResource("3_eyfmt")
 metadata/_custom_type_script = "uid://ct87blxoqivk6"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="room_loader" unique_id=777040959]
-position = Vector2(120, 72)
+position = Vector2(240, 144)
 shape = SubResource("RectangleShape2D_hj2jd")
 
 [node name="Screen Transition" parent="." unique_id=79034028 instance=ExtResource("3_mxkui")]
-position = Vector2(120, -8)
-scale = Vector2(3.2881303, 3.3205147)
+position = Vector2(240, -16)
+scale = Vector2(6.04813, 6.080515)
 nextScene = "uid://dfn85stjvcrrp"
 
 [connection signal="body_entered" from="room_loader" to="room_loader" method="_on_body_entered"]
