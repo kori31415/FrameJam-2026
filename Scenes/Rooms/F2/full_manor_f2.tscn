@@ -13,6 +13,9 @@
 
 [node name="FullManorF2" type="Node2D" unique_id=428225692]
 
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=3541908]
+color = Color(0.02617561, 0.026175609, 0.026175609, 1)
+
 [node name="Room Control Node" type="Node2D" parent="." unique_id=1822394895]
 script = ExtResource("1_jxu42")
 
@@ -33,7 +36,7 @@ position = Vector2(136, -600)
 position = Vector2(-312, -632)
 
 [node name="Library" parent="Room Control Node" unique_id=1552232612 instance=ExtResource("5_ud7kf")]
-position = Vector2(168, -760)
+position = Vector2(136, -760)
 
 [node name="DrawingRoom" parent="Room Control Node" unique_id=1313923809 instance=ExtResource("6_ud7kf")]
 position = Vector2(136, -440)

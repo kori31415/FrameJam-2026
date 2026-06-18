@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://ch3tsdonuffk6" path="res://Scripts/Player_Character.gd" id="1_cwt80"]
 [ext_resource type="Texture2D" uid="uid://ckpa4ho5chvnv" path="res://Sprites/Arrow Placeholder.png" id="2_cwt80"]
 [ext_resource type="Script" uid="uid://bc3syc4b67tt6" path="res://Scripts/Dialogue/dialogue_controller.gd" id="3_677pu"]
+[ext_resource type="Texture2D" uid="uid://drqr0ry8ehqwe" path="res://Sprites/NaD6F.png" id="4_v7dgu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_udkbk"]
 size = Vector2(32, 32)
@@ -181,3 +182,9 @@ grow_vertical = 0
 theme_override_font_sizes/font_size = 11
 label_settings = SubResource("LabelSettings_xloa1")
 autowrap_mode = 2
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=673906901]
+position = Vector2(2.5000057, 0)
+scale = Vector2(1.5195313, 1.5)
+shadow_enabled = true
+texture = ExtResource("4_v7dgu")
