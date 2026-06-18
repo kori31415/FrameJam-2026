@@ -21,26 +21,37 @@ tile_map_data = PackedByteArray("AADk/97/AAACAAAAAADk/9//AAACAAAAAADk/+D/AAACAAA
 script = ExtResource("2_uey71")
 
 [node name="East Hall F1" parent="Room Control Node" unique_id=1665940030 instance=ExtResource("3_c7253")]
+position = Vector2(48, 352)
 position = Vector2(-680, 152)
 
 [node name="Entrance Hall" parent="Room Control Node" unique_id=608629051 instance=ExtResource("4_k41bh")]
+position = Vector2(368, 288)
 position = Vector2(-40, 24)
 script = null
 
 [node name="Servant\'s Quarters" parent="Room Control Node" unique_id=2082426750 instance=ExtResource("5_16okj")]
+position = Vector2(96, 224)
 position = Vector2(-584, -104)
 
 [node name="West Hall F1" parent="Room Control Node" unique_id=1885685350 instance=ExtResource("6_q7r6w")]
+position = Vector2(592, 368)
 position = Vector2(408, 184)
 
 [node name="DiningHall" parent="Room Control Node" unique_id=872838488 instance=ExtResource("7_xggt4")]
+position = Vector2(592, 432)
 position = Vector2(408, 312)
 
 [node name="Kitchen" parent="Room Control Node" unique_id=1286336086 instance=ExtResource("8_32s5m")]
+position = Vector2(832, 416)
 position = Vector2(880, 280)
 
 [node name="Infirmary" parent="Room Control Node" unique_id=776746985 instance=ExtResource("9_ir0i7")]
+position = Vector2(0, 432)
 position = Vector2(-776, 312)
 
 [node name="CharacterBody2D" parent="." unique_id=1789930929 instance=ExtResource("10_rf5lr")]
+<<<<<<< HEAD
+position = Vector2(72, 488)
+=======
 position = Vector2(200, 72)
+>>>>>>> 37183175214218b230f723d22bebbe37b0a83e25
