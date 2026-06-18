@@ -184,7 +184,7 @@ label_settings = SubResource("LabelSettings_xloa1")
 autowrap_mode = 2
 
 [node name="PointLight2D" type="PointLight2D" parent="." unique_id=673906901]
-position = Vector2(2.5000057, 0)
-scale = Vector2(1.5195313, 1.5)
+position = Vector2(1.9073486e-06, 3.8146973e-06)
+scale = Vector2(0.5, 0.5)
 shadow_enabled = true
 texture = ExtResource("4_v7dgu")
