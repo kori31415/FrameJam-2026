@@ -8,5 +8,4 @@ Name = "Gisela"
 Health = 10
 IsPlayable = true
 SkillNames = PackedStringArray("Attack", "Defend")
-SkillFiles = PackedStringArray("res://Battles/Tutorial/Skills/AttackData.tres", "res://Battles/Tutorial/Skills/DefendData.tres")
 metadata/_custom_type_script = "uid://c632y44vfk7ro"

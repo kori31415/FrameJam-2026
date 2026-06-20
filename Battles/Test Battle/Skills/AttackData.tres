@@ -7,5 +7,6 @@ script = ExtResource("1_pmhbt")
 Name = "Attack"
 Description = "Deal damage to target enemy."
 BeginningText = "{character} has chosen to attack {target}!"
-EndingText = "{character} dealt {damage} to {target}!"
+EndingText = "{character} dealt {damage} damage to {target}!"
+ValidTargets = "Enemies"
 metadata/_custom_type_script = "uid://6oa3btxau08b"

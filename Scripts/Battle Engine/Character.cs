@@ -15,16 +15,13 @@ public partial class Character : Resource {
 	[Export]
 	public string[] SkillNames  { get; set; }
 
-	[Export]
-	public string[] SkillFiles { get; set; }
 	
-	public Character() : this(0, "", [], []) {}
+	public Character() : this(0, "", []) {}
 	
-	public Character(int health, string name, string[] skillNames, string[] skillFiles) {
+	public Character(int health, string name, string[] skillNames) {
 		Health = health;
 		Name = name;
 		SkillNames = skillNames;
-		SkillFiles = skillFiles;
 	}
 	
 }

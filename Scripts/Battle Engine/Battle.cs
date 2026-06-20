@@ -3,23 +3,20 @@ using System;
 
 public abstract partial class Battle : BattleData
 {
-    protected System.Collections.Generic.Dictionary<string, Skill> skills;
+	public System.Collections.Generic.Dictionary<string, Enemy> enemies;
+	protected System.Collections.Generic.Dictionary<string, Skill> skills;
+	protected BattleFilepathList battleFiles;
 
-    public Battle() : this("") {}
-
-    public Battle(string battleFile) {
-        BattleData battleData = GD.Load<BattleData>(battleFile);
+	public Battle() : this("") {}
+	public Battle(string name) {
+		BattleData battleData = GD.Load<BattleData>(BattleList.battles[name].battle);
 		BattleName = battleData.BattleName;
 		CharacterNames = battleData.CharacterNames;
-		CharacterFiles = battleData.CharacterFiles;
-        addSkills();
-    }
+	}
 
-    public Skill getSkillByName(string skillName) {
-        return skills[skillName];
-    }
+	public Skill getSkillByName(string skillName) {
+		return skills[skillName];
+	}
 
-    protected abstract void addSkills();
+	public abstract System.Collections.Generic.List<string>  progressStory(System.Collections.Generic.List<Character> characters);
 }
-
-
