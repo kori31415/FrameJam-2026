@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dyxhb718puvtk"]
+
+[ext_resource type="Script" uid="uid://cebio1oeah2ie" path="res://Interaction/interaction_area.gd" id="1_up4cr"]
+[ext_resource type="Resource" uid="uid://cnbou0m0mtdin" path="res://NPC & Interactables Dialogue/television_interact.tres" id="2_krfvd"]
+[ext_resource type="Texture2D" uid="uid://c8vlvy2b3hjq7" path="res://Sprites/Key.png" id="2_p0yg6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_up4cr"]
+size = Vector2(32, 32)
+
+[node name="Key" type="StaticBody2D" unique_id=1319656411]
+collision_layer = 128
+collision_mask = 128
+script = ExtResource("1_up4cr")
+dialogue = ExtResource("2_krfvd")
+item = true
+is_key = true
+metadata/_custom_type_script = "uid://cebio1oeah2ie"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=645634307]
+position = Vector2(-16, -16)
+shape = SubResource("RectangleShape2D_up4cr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=85812084]
+position = Vector2(-16, -15.999999)
+texture = ExtResource("2_p0yg6")

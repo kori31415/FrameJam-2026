@@ -19,7 +19,7 @@ func set_dialogue(dialogue : Dialogue):
 	current_dialogue = dialogue
 	
 	dialogue_screen.visible = true
-	name_text.text = dialogue.npc_name
+#	name_text.text = dialogue.npc_name
 	
 	current_line = -1
 	

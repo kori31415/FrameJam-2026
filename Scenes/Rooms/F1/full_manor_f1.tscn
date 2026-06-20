@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://c0idl13k0sbap" path="res://Scenes/Rooms/F1/west_hall_f1.tscn" id="6_q7r6w"]
 [ext_resource type="PackedScene" uid="uid://7blrr478xlq" path="res://Scenes/Rooms/F1/dining_hall.tscn" id="7_xggt4"]
 [ext_resource type="PackedScene" uid="uid://6dbisr7lu4n8" path="res://Scenes/Rooms/F1/kitchen.tscn" id="8_32s5m"]
-[ext_resource type="PackedScene" uid="uid://bie32dv0kxbrw" path="res://Scenes/Rooms/F1/infirmary.tscn" id="9_ir0i7"]
+[ext_resource type="PackedScene" uid="uid://14ucv3il0a3j" path="res://Scenes/Rooms/F1/infirmary.tscn" id="9_ir0i7"]
 [ext_resource type="PackedScene" uid="uid://bkkng2ner2ff1" path="res://Scenes/Character.tscn" id="10_rf5lr"]
 
 [node name="Node2D2" type="Node2D" unique_id=2091172214]
@@ -17,9 +17,6 @@ script = ExtResource("2_uey71")
 
 [node name="DiningHall" parent="FullManorF1" unique_id=872838488 instance=ExtResource("7_xggt4")]
 position = Vector2(1096, 248)
-
-[node name="East Hall F1" parent="FullManorF1" unique_id=1665940030 instance=ExtResource("3_c7253")]
-position = Vector2(8, 88)
 
 [node name="West Hall F1" parent="FullManorF1" unique_id=1885685350 instance=ExtResource("6_q7r6w")]
 position = Vector2(1096, 120)
@@ -36,8 +33,11 @@ position = Vector2(104, -168)
 [node name="Kitchen" parent="FullManorF1" unique_id=1286336086 instance=ExtResource("8_32s5m")]
 position = Vector2(1576, 216)
 
+[node name="East Hall F1" parent="FullManorF1" unique_id=1665940030 instance=ExtResource("3_c7253")]
+position = Vector2(8, 88)
+
 [node name="CharacterBody2D" parent="." unique_id=1789930929 instance=ExtResource("10_rf5lr")]
-position = Vector2(784, 168)
+position = Vector2(888, 8)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=139703425]
 position = Vector2(0, 1)
