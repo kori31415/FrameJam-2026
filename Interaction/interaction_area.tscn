@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ajv5g"]
 size = Vector2(32, 32)
 
-[node name="StaticBody2D" type="StaticBody2D" unique_id=999967269]
+[node name="interaction_area" type="StaticBody2D" unique_id=999967269]
 collision_layer = 129
 collision_mask = 129
 script = ExtResource("1_c5th6")

@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://dig5h6eefb02t"]
+
+[ext_resource type="Script" uid="uid://b68gqkp6ckqfu" path="res://doorway.gd" id="1_5yk8g"]
+[ext_resource type="Texture2D" uid="uid://d1xwr52hamlsj" path="res://Sprites/Frame_Jam_Tileset.png" id="1_14gom"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eyu4i"]
+size = Vector2(32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5yk8g"]
+atlas = ExtResource("1_14gom")
+region = Rect2(288, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t1e1v"]
+atlas = ExtResource("1_14gom")
+region = Rect2(320, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aa16f"]
+atlas = ExtResource("1_14gom")
+region = Rect2(288, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pa4mq"]
+atlas = ExtResource("1_14gom")
+region = Rect2(320, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gmewq"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5yk8g")
+}, {
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_t1e1v")
+}, {
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_aa16f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pa4mq")
+}],
+"loop": false,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_5yk8g"]
+polygon = PackedVector2Array(16, 13, 15, 12, -16, 12, -16, 16, 15, 16, 16, 15)
+
+[node name="Doorway_Locked" type="Area2D" unique_id=2033069829]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_5yk8g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1008366668]
+shape = SubResource("RectangleShape2D_eyu4i")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1751474733]
+sprite_frames = SubResource("SpriteFrames_gmewq")
+animation = &"new_animation"
+speed_scale = 0.8
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="." unique_id=1355999520]
+occluder = SubResource("OccluderPolygon2D_5yk8g")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

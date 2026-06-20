@@ -74,4 +74,7 @@ func dialouge_handler():
 	var collider = interactable_ray_cast.get_collider()
 	dialogue_controller.set_dialogue(collider.dialogue)
 	if collider.item:
-		collider.get_parent().queue_free()
+		collider.queue_free()
+		if collider.is_key:
+			collider.add_key_to_inventory()
+			print(globals.collected_keys)
