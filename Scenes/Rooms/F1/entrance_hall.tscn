@@ -4,8 +4,9 @@
 [ext_resource type="Script" uid="uid://ct87blxoqivk6" path="res://Scripts/room_loader.gd" id="3_eyfmt"]
 [ext_resource type="PackedScene" uid="uid://bpbjgd65itwt5" path="res://Scenes/screen_transition.tscn" id="3_mxkui"]
 [ext_resource type="PackedScene" uid="uid://dyxhb718puvtk" path="res://key.tscn" id="4_vn35x"]
-[ext_resource type="Resource" uid="uid://dobullqus0xa" path="res://NPC & Interactables Dialogue/cassette_interact.tres" id="5_pxfnh"]
-[ext_resource type="Resource" uid="uid://b8a0uk4qlegtn" path="res://NPC & Interactables Dialogue/StoryScenes/opening_scene.tres" id="6_0q8ac"]
+[ext_resource type="Resource" uid="uid://bxx35nn4oxc7f" path="res://NPC & Interactables Dialogue/key_f1ww_collect.tres" id="5_2w3do"]
+[ext_resource type="Resource" uid="uid://dgy4q8a3w2wko" path="res://NPC & Interactables Dialogue/key_f2ew_collect.tres" id="6_y4qdb"]
+[ext_resource type="Resource" uid="uid://bwmmn6rvulqea" path="res://NPC & Interactables Dialogue/key_f2_collect.tres" id="7_mcgep"]
 
 [sub_resource type="GDScript" id="GDScript_d1tuh"]
 script/source = "extends Node2D
@@ -49,16 +50,17 @@ nextScene = "uid://dfn85stjvcrrp"
 
 [node name="Key" parent="." unique_id=1319656411 instance=ExtResource("4_vn35x")]
 position = Vector2(160, 224)
-dialogue = ExtResource("5_pxfnh")
+dialogue = ExtResource("5_2w3do")
 key_name = "WeWi1"
 
 [node name="Key2" parent="." unique_id=530758867 instance=ExtResource("4_vn35x")]
 position = Vector2(256, 224)
-dialogue = ExtResource("6_0q8ac")
+dialogue = ExtResource("6_y4qdb")
 key_name = "WeWi2"
 
 [node name="Key3" parent="." unique_id=1960770683 instance=ExtResource("4_vn35x")]
 position = Vector2(352, 224)
+dialogue = ExtResource("7_mcgep")
 key_name = "EsWi2"
 
 [connection signal="body_entered" from="room_loader" to="room_loader" method="_on_body_entered"]

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://dgy4q8a3w2wko"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_tc4gh"]
+
+[resource]
+script = ExtResource("1_tc4gh")
+char_name = Array[String]([""])
+lines = Array[String](["You got a key for the east wing."])
+metadata/_custom_type_script = "uid://butavhetddgg6"
