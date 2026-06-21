@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c1mxfy5g3b1fk" path="res://Scenes/tile_map_layer.tscn" id="1_xqpxp"]
 [ext_resource type="PackedScene" uid="uid://crk4ngo3d11et" path="res://Scenes/room_loader.tscn" id="2_c6usg"]
 [ext_resource type="PackedScene" uid="uid://dyxhb718puvtk" path="res://Scenes/key.tscn" id="3_8lukk"]
-[ext_resource type="Resource" uid="uid://b8a0uk4qlegtn" path="res://NPC & Interactables Dialogue/StoryScenes/opening_scene.tres" id="4_3q3g0"]
+[ext_resource type="Resource" uid="uid://bwmmn6rvulqea" path="res://NPC & Interactables Dialogue/key_f2_collect.tres" id="4_8lukk"]
 
 [node name="Kitchen" type="Node2D" unique_id=1286336086]
 
@@ -17,5 +17,5 @@ scale = Vector2(4.688922, 10.014402)
 
 [node name="Key2" parent="." unique_id=1319656411 instance=ExtResource("3_8lukk")]
 position = Vector2(184, -160)
-dialogue = ExtResource("4_3q3g0")
+dialogue = ExtResource("4_8lukk")
 key_name = "WeWi2"

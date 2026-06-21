@@ -2,4 +2,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	MusicPlayer.load_song("Unsettling")
+	if len(MusicPlayer.current_song) == 0:
+		MusicPlayer.load_song("Unsettling")
+	elif MusicPlayer.current_song[3] != "Unsettling":
+		MusicPlayer.load_song("Unsettling")

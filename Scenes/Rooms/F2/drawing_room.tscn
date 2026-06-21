@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c1mxfy5g3b1fk" path="res://Scenes/tile_map_layer.tscn" id="1_at001"]
 [ext_resource type="PackedScene" uid="uid://crk4ngo3d11et" path="res://Scenes/room_loader.tscn" id="2_eiv0h"]
 [ext_resource type="PackedScene" uid="uid://dyxhb718puvtk" path="res://Scenes/key.tscn" id="3_eiv0h"]
+[ext_resource type="Resource" uid="uid://dgy4q8a3w2wko" path="res://NPC & Interactables Dialogue/key_f2ew_collect.tres" id="4_cyhxj"]
 
 [node name="DrawingRoom" type="Node2D" unique_id=1313923809]
 
@@ -15,4 +16,5 @@ scale = Vector2(7.307504, 5.351631)
 
 [node name="Key3" parent="." unique_id=1319656411 instance=ExtResource("3_eiv0h")]
 position = Vector2(64, 224)
+dialogue = ExtResource("4_cyhxj")
 key_name = "EsWi2"

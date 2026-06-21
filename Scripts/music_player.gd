@@ -1,10 +1,10 @@
 extends AudioStreamPlayer2D
-var playlist = {"Rats":[16.750,97.15,load("res://Music_Files/Rat Scuffle v01.mp3")],
-"Belong":[6.747,96.3,load("res://Music_Files/Those Who Belong.mp3")],
-"Unsettling":[8.12,159.12,load("res://Music_Files/Unsettling Place v01 Test.mp3")],
-"Stay":[2.45,92.91,load("res://Music_Files/Stay Here v01.mp3")],
-"Pixie":[6.54, 134.49,load("res://Music_Files/ForestPixie_v01.mp3")],
-"Flower":[14.035, 174.813,load("res://Music_Files/My Flower OG Full.mp3")]
+var playlist = {"Rats":[16.750,97.15,load("res://Music_Files/Rat Scuffle v01.mp3"), "Rats"],
+"Belong":[6.747,96.3,load("res://Music_Files/Those Who Belong.mp3"), "Belong"],
+"Unsettling":[8.12,159.12,load("res://Music_Files/Unsettling Place v01 Test.mp3"), "Unsettling"],
+"Stay":[2.45,92.91,load("res://Music_Files/Stay Here v01.mp3"), "Stay"],
+"Pixie":[6.54, 134.49,load("res://Music_Files/ForestPixie_v01.mp3"), "Pixie"],
+"Flower":[14.035, 174.813,load("res://Music_Files/My Flower OG Full.mp3"), "Flower"]
 }
 
 var current_song = [] 
