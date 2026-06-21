@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c2fkttli5pcrw"
+path="res://.godot/imported/My Flower OG Full.mp3-121f796b6592bf79b9da298f13f8790f.mp3str"
+
+[deps]
+
+source_file="res://Music_Files/My Flower OG Full.mp3"
+dest_files=["res://.godot/imported/My Flower OG Full.mp3-121f796b6592bf79b9da298f13f8790f.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

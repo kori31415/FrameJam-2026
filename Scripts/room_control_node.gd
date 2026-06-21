@@ -1,11 +1,5 @@
 extends Node2D
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	for child in self.get_children():
-		child.find_children("", "room_loader")[0].lamps
-		print(str(child) + "lights out")
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+	MusicPlayer.load_song("Unsettling")

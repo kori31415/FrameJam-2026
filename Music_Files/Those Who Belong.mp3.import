@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://djybjjad1wc1r"
+path="res://.godot/imported/Those Who Belong.mp3-516b5a2c8945161e2e8f169177a4c1d3.mp3str"
+
+[deps]
+
+source_file="res://Music_Files/Those Who Belong.mp3"
+dest_files=["res://.godot/imported/Those Who Belong.mp3-516b5a2c8945161e2e8f169177a4c1d3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

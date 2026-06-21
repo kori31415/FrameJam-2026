@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c1mxfy5g3b1fk"]
 
 [ext_resource type="Texture2D" uid="uid://d1xwr52hamlsj" path="res://Sprites/Frame_Jam_Tileset.png" id="2_8cujs"]
-[ext_resource type="PackedScene" uid="uid://b34iqks5sfvid" path="res://lamp.tscn" id="2_tto40"]
+[ext_resource type="PackedScene" uid="uid://b34iqks5sfvid" path="res://Scenes/lamp.tscn" id="2_tto40"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_qbaa6"]
 polygon = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)

@@ -20,6 +20,7 @@ config/icon="res://Sprites/icon.svg"
 Room_Loader="*uid://c51gn60tw34jf"
 InteractionManager="*uid://cnmr4bpgocd4g"
 globals="*uid://dhjagow0ywfgf"
+MusicPlayer="*uid://lejtaek2h7lv"
 
 [display]
 

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dig5h6eefb02t"]
 
-[ext_resource type="Script" uid="uid://b68gqkp6ckqfu" path="res://doorway.gd" id="1_5yk8g"]
+[ext_resource type="Script" uid="uid://b68gqkp6ckqfu" path="res://Scripts/doorway.gd" id="1_5yk8g"]
 [ext_resource type="Texture2D" uid="uid://d1xwr52hamlsj" path="res://Sprites/Frame_Jam_Tileset.png" id="1_14gom"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eyu4i"]

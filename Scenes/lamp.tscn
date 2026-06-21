@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b34iqks5sfvid"]
 
 [ext_resource type="Texture2D" uid="uid://mumb4vlt3f6v" path="res://Sprites/lamp_V1.png" id="1_uno5e"]
-[ext_resource type="Script" uid="uid://cxyar54fg0gr3" path="res://lamp.gd" id="1_vxcd3"]
+[ext_resource type="Script" uid="uid://cxyar54fg0gr3" path="res://Scripts/lamp.gd" id="1_vxcd3"]
 [ext_resource type="Texture2D" uid="uid://drqr0ry8ehqwe" path="res://Sprites/NaD6F.png" id="2_vxcd3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qfipa"]

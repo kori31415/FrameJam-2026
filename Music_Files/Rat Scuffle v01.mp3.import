@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://csd887h7m5trf"
+path="res://.godot/imported/Rat Scuffle v01.mp3-33e0d65ac715aab1ee58729c77c43756.mp3str"
+
+[deps]
+
+source_file="res://Music_Files/Rat Scuffle v01.mp3"
+dest_files=["res://.godot/imported/Rat Scuffle v01.mp3-33e0d65ac715aab1ee58729c77c43756.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
