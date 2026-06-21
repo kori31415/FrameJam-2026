@@ -3,9 +3,6 @@
 [ext_resource type="Script" uid="uid://b68gqkp6ckqfu" path="res://Scripts/doorway.gd" id="1_5yk8g"]
 [ext_resource type="Texture2D" uid="uid://d1xwr52hamlsj" path="res://Sprites/Frame_Jam_Tileset.png" id="1_14gom"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_eyu4i"]
-size = Vector2(32, 32)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_5yk8g"]
 atlas = ExtResource("1_14gom")
 region = Rect2(288, 32, 32, 32)
@@ -47,24 +44,23 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_5yk8g"]
-polygon = PackedVector2Array(16, 13, 15, 12, -16, 12, -16, 16, 15, 16, 16, 15)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eyu4i"]
+size = Vector2(32, 32)
 
-[node name="Doorway_Locked" type="Area2D" unique_id=2033069829]
-collision_layer = 3
-collision_mask = 3
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_oqcyt"]
+polygon = PackedVector2Array(-29, 0, 28, 0, 38, 12, -39, 12)
+
+[node name="Doorway_Locked" type="StaticBody2D" unique_id=972121199]
 script = ExtResource("1_5yk8g")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1008366668]
-shape = SubResource("RectangleShape2D_eyu4i")
+locked = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1751474733]
 sprite_frames = SubResource("SpriteFrames_gmewq")
 animation = &"new_animation"
 speed_scale = 0.8
 
-[node name="LightOccluder2D" type="LightOccluder2D" parent="." unique_id=1355999520]
-occluder = SubResource("OccluderPolygon2D_5yk8g")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1008366668]
+shape = SubResource("RectangleShape2D_eyu4i")
 
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
-[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[node name="LightOccluder2D" type="LightOccluder2D" parent="." unique_id=1355999520]
+occluder = SubResource("OccluderPolygon2D_oqcyt")

@@ -1,8 +1,12 @@
 [gd_scene format=3 uid="uid://dyxhb718puvtk"]
 
 [ext_resource type="Script" uid="uid://cebio1oeah2ie" path="res://Interaction/interaction_area.gd" id="1_up4cr"]
-[ext_resource type="Resource" uid="uid://cnbou0m0mtdin" path="res://NPC & Interactables Dialogue/television_interact.tres" id="2_krfvd"]
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="2_brn0f"]
 [ext_resource type="Texture2D" uid="uid://c8vlvy2b3hjq7" path="res://Sprites/Key.png" id="2_p0yg6"]
+
+[sub_resource type="Resource" id="Resource_lc1k7"]
+script = ExtResource("2_brn0f")
+metadata/_custom_type_script = "uid://butavhetddgg6"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_up4cr"]
 size = Vector2(32, 32)
@@ -11,7 +15,7 @@ size = Vector2(32, 32)
 collision_layer = 128
 collision_mask = 128
 script = ExtResource("1_up4cr")
-dialogue = ExtResource("2_krfvd")
+dialogue = SubResource("Resource_lc1k7")
 item = true
 is_key = true
 metadata/_custom_type_script = "uid://cebio1oeah2ie"
