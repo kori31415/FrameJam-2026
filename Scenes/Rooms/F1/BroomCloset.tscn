@@ -1,0 +1,9 @@
+[gd_scene format=4 uid="uid://bjyo36uk7fdm4"]
+
+[ext_resource type="PackedScene" uid="uid://c1mxfy5g3b1fk" path="res://Scenes/tile_map_layer.tscn" id="1_86cei"]
+
+[node name="BroomCloset" type="Node2D" unique_id=2053537127]
+
+[node name="TileMapLayer" parent="." unique_id=1341883271 instance=ExtResource("1_86cei")]
+position = Vector2(128, 64)
+tile_map_data = PackedByteArray("AAD9////AAAAAAAAAAD9/wAAAAAAAAAAAAD9/wEAAAAAAAAAAAD+////AAAAAAAAAAD+/wAAAAAAAAAAAAD+/wEAAAAAAAAAAAD/////AAAAAAAAAAD//wAAAAAAAAAAAAD//wEAAAAAAAAAAAD9//7/AAAHAAIAAAD8//7/AAAFAAAAAAD///7/AAAEAAIAAAD+//7/AAAKAAIAAAD8////AAABAAIAAAD8/wAAAAABAAIAAAD8/wEAAAABAAIAAAD8/wIAAAABAAMAAAD9/wIAAAACAAMAAAD+/wIAAAACAAMAAAD//wIAAAACAAMAAAAAAAIAAAADAAMAAAAAAAEAAAADAAIAAAAAAAAAAAADAAIAAAAAAP//AAADAAIAAAAAAP7/AAAFAAAAAAA=")

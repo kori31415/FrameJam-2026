@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cwbdqrtrql1dq"
+path="res://.godot/imported/Unsettling Place v01 Test.mp3-202153c0f5a6f0f7f6a5c261fa2355b1.mp3str"
+
+[deps]
+
+source_file="res://Music_Files/Unsettling Place v01 Test.mp3"
+dest_files=["res://.godot/imported/Unsettling Place v01 Test.mp3-202153c0f5a6f0f7f6a5c261fa2355b1.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
