@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://djdecwc3jtvks"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_ys04r"]
+
+[resource]
+script = ExtResource("1_ys04r")
+char_name = Array[String](["Brigitte", "Gisela", "Brigitte", "Sylvia", "Brigitte", "Sylvia", "Gisela", "Brigitte", "Sylvia", "Gisela", "Sylvia", "Brigitte", "Gisela", "Sylvia", "Brigitte", "Gisela"])
+lines = Array[String](["Gigi? Gigi, it’s you!", "W-Who are you?", "It’s me, Brigitte. Your lover.", "Don’t come any closer! I don’t know what tricks you’re playing, but I won’t let you hurt my friend!", "You! I won’t let you mess with her any longer!", "Nice try fiend.", "What’s going on?", "She’s lying to you Gisela!", "This beast is trying to trick you. Get out of here Gisela, it’s dangerous.", "What about you?", "I can hold my own for a bit, long enough to reason with her. But you need to run!", "Don’t listen to her!", "Erm, uh …", "Go!", "No!", "Argh."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

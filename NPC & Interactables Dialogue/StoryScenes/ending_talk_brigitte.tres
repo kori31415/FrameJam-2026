@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://4ntqfjjfsf8e"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_ert5w"]
+
+[resource]
+script = ExtResource("1_ert5w")
+char_name = Array[String](["Brigitte", "Gisela", "Brigitte", "Gisela", "Brigitte", "Gisela", "Brigitte", "Gisela", "Brigitte", "Gisela", "Brigitte", "Gisela", "Brigitte", "Gisela", "Brigitte", "Gisela"])
+lines = Array[String](["Hey.", "Hey.", "So, uh. How does it feel, having no memories?", "I’ll be honest. It’s not fun.", "Yeah. I’d hate it too.", "But, if I loved you enough that I believed I’d love you again, then it’s not so bad. Almost kind of sweet.", "Aww. That’s nice of you to think. I’d be rabid, not remembering my little brother. How could I willingly forget someone as important as him?", "He is cute. How old is he?", "13.", "Wow, that’s older than I expected, honestly.", "I couldn’t bring myself to reprimand him for any of his antics after our parents died. He’s remained a bit childish as a result.", "It shows how much you care about him though. I really admire that.", "… Are you sure you don’t have your memories back?", "Yeah, why?", "Heh, you really haven’t changed at all then. Your personality, your likes and dislikes. They’re all the same. It’s actually kind of nice, hearing how you still have that wonderful way to look at life.", "*blush* I’ll be going now."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

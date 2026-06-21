@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://byldxuatvf63m"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_x5nku"]
+
+[resource]
+script = ExtResource("1_x5nku")
+char_name = Array[String](["Gisela", "Helga", "Ingrid", "Gisela", "Ursula", "Ingrid", "Helga", "Sylvia", "Helga", "Sylvia", "Ursula", "Gisela", "Ingrid", "Helga", "Sylvia", "Gisela", "Sylvia", "Gisela", "Ursula", "Helga", "Ursula", "Helga", "Sylvia"])
+lines = Array[String](["Helga?", "There’s two of you huh, well you’re probably working together so it doesn’t matter.", "You two dealt with Anja and Melanie, didn’t you?", "We fought, but they’re fine. We don’t mean you any harm, we just want to get to the root of this curse.", "Amelia was pretty clear about this, the witch is in this building and there shouldn’t be any way for someone else to get in.", "But there’s two of them.", "We haven’t heard any other reports, she’s probably trying to trick us.", "Are you talking to yourself?", "Why yes, thanks to this beloathed curse I now have to talk to my headmates verbally. So thanks for that whichever one of you did this.", "Neither of us did it lady. We want out of this just as much as you do.", "So what’s your plan then?", "We don’t really have a plan, we’re kinda just wandering around.", "She sounds genuine.", "I don’t buy it though, you’re not getting the key. Scram!", "Well the hard way it is then, send ‘em packing Gigi.", "I don’t know about this.", "Look, I have nothing against ‘em either, but we need that key. Statistically the upstairs has just as much chance to hold the key to this as the ground floor.", "Maybe there’s a spare.", "There isn’t.", "Maybe don’t tell them that.", "It was only a matter of time before they came back, I’d rather not delay the inevitable.", "Fine, let’s just get this over with.", "Took the words right out of my mouth."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

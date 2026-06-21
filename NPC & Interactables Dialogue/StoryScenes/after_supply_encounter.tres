@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://cfbuqkbcfa0v3"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_c1rgo"]
+
+[resource]
+script = ExtResource("1_c1rgo")
+char_name = Array[String](["Anja", "Melanie", "Anja", "Melanie", "Anja", "Melanie", "Gisela", "Anja", "Sylvia", "Gisela", "Sylvia", "Gisela", "Melanie", "Gisela", "Anja", "Gisela", "Sylvia", "Melanie", "Gisela", "Melanie", "Gisela"])
+lines = Array[String](["*huff* *huff* I’m not gonna let you take it.", "Anja, stop!", "But …", "They’ve won, we did what we could. You’re going to hurt yourself if you keep going.", "And what about Helga’s orders?", "We tried, it’s up to her to stop them now.", "We didn’t mean any harm, we just want to get to the bottom of this whole curse.", "So this was all pointless?", "Yeah, it was idiots!", "Sylvia, be nice to them.", "Hmph.", "Apologies for my friend here. Why did this Helga person order you two to attack us?", "She didn’t tell us much, just to repel any humans in case the witch comes back.", "Don’t you know what she looks like?", "She could’ve been disguising herself.", "Fair point.", "I imagine she’s going to attack us too?", "Probably, she’s been pretty on edge since this all happened.", "Could you two help us avoid an encounter?", "I don’t think we can.", "All right, thanks anyway."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

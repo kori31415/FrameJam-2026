@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://d3514tkq1rihj"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_kbxmr"]
+
+[resource]
+script = ExtResource("1_kbxmr")
+char_name = Array[String](["Nadine", "Gisela", "Gisela", "Nadine", "Thea", "Gisela", "Thea", "Gisela", "Thea"])
+lines = Array[String](["Watch out!", "Whuh?", "Someone’s here. Be on your guard.", "Gisela, the mirror!", "Seems Sylvia was right about you. You’re not going to make this easy for me.", "Sylvia? You know her?", "I am Thea! Silvia’s pupil and I’ll prove to her that I am worthy!", "Wait, we can talk this out!", "There’s nothing to talk about. This is my purpose."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

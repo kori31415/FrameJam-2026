@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://b6pi371hxb54y"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_eu1ae"]
+
+[resource]
+script = ExtResource("1_eu1ae")
+char_name = Array[String](["Gisela", "Sylvia", "Brigitte", "Pippin", "Brigitte", "Pippin", "Brigitte", "Gisela", "Sylvia", "Gisela", "Sylvia", "Sylvia", "Sylvia", "Sylvia", "Sylvia"])
+lines = Array[String](["Sylvia?!", "Damn. I guess the jig is up.", "Gisela! Pippin!", "Big Sis! We’re here to help!", "Pippin, I thought I told you to stay in your room. What happened to Amelia?", "We kicked her butt!", "Sigh… Well, if you defeated Amelia, then you’re strong enough to fight with me. Just be careful! Sylvia is dangerous.", "Sylvia, stop this right now! There's no need to fight!", "Oh Gigi. I can't do that, not while our little game is still going.", "Game?", "You see, I tried being nice. I didn't smash or stab any of the little rodents we met! And I spared your little Beast so you had a chance for a heart-to-heart.", "But that was it.", "I tried being nice by goading your little Beast into believing her brother was in trouble. All to keep you away from here, while I finally dealt the finishing blow.", "But you just had to use your magic and heal her. So now, play time is over.", "I’ll kill you Brigitte, and then she will be mine!"])
+metadata/_custom_type_script = "uid://butavhetddgg6"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://chnl4rou4qxjf"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_4jad7"]
+
+[resource]
+script = ExtResource("1_4jad7")
+char_name = Array[String](["Sylvia", "Gisela", "Sylvia", "Gisela", "Sylvia", "Gisela"])
+lines = Array[String](["Also locked. I hope this doesn’t become a pattern. I am not in the mood for a wild goose chase.", "Let’s just stay positive and check the rooms we can access.", "Whatever you say darling.", "Darling?!", "Just teasing dear.", "Oh, right."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

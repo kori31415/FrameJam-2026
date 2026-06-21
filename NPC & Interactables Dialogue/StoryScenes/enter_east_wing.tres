@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://cbk2fo0n1ch5o"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_bjyhr"]
+
+[resource]
+script = ExtResource("1_bjyhr")
+char_name = Array[String](["Amelia", "Nadine", "Amelia", "Gisela", "Nadine", "Amelia", "Amelia", "Gisela"])
+lines = Array[String](["Stop right there!", "Eek!", "This area is restricted! I’ve already had to deal with one of you rats, I’m not about to let more of you walk past me!", "Rats? You mean a literal rat or someone else? Did the witch come through here?", "That’s bad! Lady Brigitte asked us to check on young master Pippin. If anything happens to him, she will be beside herself!", "Lady Brigitte sent you? Hmm… Okay, you’re allowed to pass. I haven’t seen the witch, but be warned, I’m watching you!", "Especially you.", "Right. We’ll behave. Come on, Nadine. Let’s find Pippin."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

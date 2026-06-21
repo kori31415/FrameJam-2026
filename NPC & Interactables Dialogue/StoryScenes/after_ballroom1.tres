@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://cgdfacyyj0v3k"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_xqe7i"]
+
+[resource]
+script = ExtResource("1_xqe7i")
+char_name = Array[String](["Gisela", "Gisela"])
+lines = Array[String](["What’s going on? What were they talking about? This Brigitte, was she really my lover? Has Sylvia been lying to me this whole time? How do I know who to trust?", "I need to calm down, let’s just find a quiet room."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

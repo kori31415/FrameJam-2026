@@ -19,7 +19,6 @@ func set_dialogue(dialogue : Dialogue):
 	current_dialogue = dialogue
 	
 	dialogue_screen.visible = true
-#	name_text.text = dialogue.npc_name
 	
 	current_line = -1
 	
@@ -39,12 +38,13 @@ func _process (delta : float):
 			close_screen()
 		else:
 			current_line += 1
-			_set_line(current_dialogue.lines[current_line])
+			_set_line(current_dialogue.lines[current_line], current_dialogue.char_name[current_line])
 
-func _set_line(line : String):
+func _set_line(line : String, name : String):
 	visible_chars = 0
 	dialogue_text.visible_characters = 0
 	dialogue_text.text = line
+	name_text.text = name
 
 func close_screen():
 	dialogue_screen.visible = false

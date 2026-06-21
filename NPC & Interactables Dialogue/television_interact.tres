@@ -4,5 +4,6 @@
 
 [resource]
 script = ExtResource("1_1vwrx")
+char_name = Array[String](["", "test", "", "aaaa", ""])
 lines = Array[String](["You put the Cassette in the Cassette Player.", "The screen turned on.", "test", "test2", "test3"])
 metadata/_custom_type_script = "uid://butavhetddgg6"

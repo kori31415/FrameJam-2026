@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://dqqp501o8f0j8"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_8h8ha"]
+
+[resource]
+script = ExtResource("1_8h8ha")
+char_name = Array[String](["Sylvia", "Gisela", "Sylvia", "Gisela", "Sylvia"])
+lines = Array[String](["Damn, it’s locked.", "What’s the plan now?", "Look around for a key or another exit. Don’t know what else we can do.", "Good point, where would a key be in a place like this though?", "I don’t know, let’s just search every room I guess."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

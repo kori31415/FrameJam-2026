@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://dqotftcyivcqr"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_42jjk"]
+
+[resource]
+script = ExtResource("1_42jjk")
+char_name = Array[String](["Gisela", "Sylvia", "Sylvia", "Sylvia", "Gisela", "Sylvia", "Gisela", "Sylvia", "Gisela", "Sylvia", "Gisela", "Sylvia", "Gisela", "Sylvia", "Gisela", "Sylvia", "Gisela", "Sylvia", "Gisela", "Sylvia", "Gisela", "Gisela", "Sylvia", "Gisela"])
+lines = Array[String](["Sylvia. I really did think of you as a friend. You were the first person I talked to when I woke up and you were kind to me, even if it was all lies. I genuinely liked spending that time with you.", "Hah… Thanks.", "You know, this reminds me of when we first met. I was playing tricks on some other humans too. You stopped me, said I was being too mean. When I tried attacking you, you wrapped me in vines. Gave me the lecture of a lifetime, about life and how precious it was.", "Heh. Maybe that’s why I fell for you.", "Because I gave you a lecture?", "No. Because of the vines.", "...", "What can I say, I’m a kinky bitch.", "Enough info Sylvia.", "You know I’m also into …", "Aren’t you forgetting someone?", "What?", "The name Thea ring a bell?", "Oh her, she’s here?", "She got cursed too.", "Oh, whoops.", "That’s all you have to say?", "Eh, I know her, I’ll explain and she’ll forgive me.", "You’ll lie to her again, you mean? Like you did about your intentions here.", "Look, she’s a lot sometimes okay?", "You’re one to talk.", "A piece of advice Sylvia, if you want someone to love you then don’t do … any of this.", "I get it!", "And just to let you know, she has better friends now, ones who actually care about her!"])
+metadata/_custom_type_script = "uid://butavhetddgg6"

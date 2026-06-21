@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://df71arudy4w8w"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_6gxtr"]
+
+[resource]
+script = ExtResource("1_6gxtr")
+char_name = Array[String](["Amelia", "Pippin", "Gisela", "Amelia", "Nadine", "Gisela", "Amelia", "Pippin", "Gisela", "Amelia", "Gisela"])
+lines = Array[String](["Curses. I’m not strong enough. I’ll have to up my training.", "Don’t worry, Amelia! You did your best. I’ll tell Big Sis how hard you fought.", "How much do you train?", "20 laps around the manor, 100 strikes at a wooden target, and a weekly sparring session with the Lady herself. Seems it wasn’t enough.", "Nonsense, I’ve seen you! You’re a powerhouse. Your spars with Lady Brigitte are always so intense!", "Is Brigitte also that powerful?", "She is, I train her myself! I’m mighty proud of her. If only her parents could see her now, they’d be so proud as well.", "Yeah, Big Sis is great! So let’s go help her before she gets hurt!", "Indeed. Let’s stop Sylvia, once and for all. Get some rest, Amelia.", "Protect my Lady, miss. She is prone to take matters in her own hands, leaving everyone else out. But if it’s you, I can trust she will be safe.", "That means a lot. Thank you."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://c36p2d4lbwx7g"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_javfy"]
+
+[resource]
+script = ExtResource("1_javfy")
+char_name = Array[String](["Nadine", "Gisela", "Nadine", "Gisela", "Nadine", "Gisela", "Nadine", "Gisela", "Nadine", "Gisela", "Nadine", "Gisela", "Nadine"])
+lines = Array[String](["The key is probably in here somewhere.", "What’s this?", "Oh! That’s a cassette tape. Our Lady loves creating music, she often records herself playing instruments.", "This tape… it looks familiar.", "I’ve never seen it before. “My Flower.” Sounds special!", "It does. Maybe it’s important. I’ll bring it with me and ask Brigitte. I’d like to know her better, and hearing her music sounds like a good place to start.", "What a wonderful idea! I’m sure it’ll sound lovely when you play it. Oh, there’s a cassette player here! It looks portable. Perhaps you can bring it with you.", "Good idea. I want to listen to it with Brigitte. Together. I want to hear her thoughts, see how she reacts. And… I hope this can help me remember her.", "I hope so too. But if you don’t remember, try not to let it hurt. You can always start new with Brigitte. Like I did, when I made you my first friend.", "Thanks, Nadine. You’re really sweet.", "I’m just trying to help.", "Thank you. Now let’s make sure Pippin is safe!", "Of course, let’s go."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

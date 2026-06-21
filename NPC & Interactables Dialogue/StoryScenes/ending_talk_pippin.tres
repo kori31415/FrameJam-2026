@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://mpfaofj3ivg4"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_81mue"]
+
+[resource]
+script = ExtResource("1_81mue")
+char_name = Array[String](["Pippin", "Gisela", "Pippin", "Gisela", "Pippin", "Pippin"])
+lines = Array[String](["Arf!", "Back to your antics?", "Haha, yup! Gotta enjoy it while it lasts. You’re probably gonna break this curse soon, right?", "Indeed. How was it though? Turning into a dog, I mean.", "A little scary. I didn’t know what was happening. It was hard to walk on four legs, too. But once I got the hang of it, I tried using my dog body like a human. It was fun! And hard. I fell so many times, but my fur cushioned me!", "I’m gonna miss being a dog, but I’m so ready for bear hugs from Big Sis!"])
+metadata/_custom_type_script = "uid://butavhetddgg6"
