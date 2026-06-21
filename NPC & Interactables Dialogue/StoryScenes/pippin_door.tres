@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://d3xhxi8go2a2y"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_f4gus"]
+
+[resource]
+script = ExtResource("1_f4gus")
+char_name = Array[String](["Gisela", "Nadine", "Gisela"])
+lines = Array[String](["It’s locked.", "There must be a key for it. Maybe it’s in the Master Bedroom?", "Let’s check it then."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

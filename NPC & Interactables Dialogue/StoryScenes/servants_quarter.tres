@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://b7bhi7havipxj"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_kjqw3"]
+
+[resource]
+script = ExtResource("1_kjqw3")
+char_name = Array[String](["Rats", "Gisela", "Rat 1", "Gisela", "Rat 1", "Gisela", "Rat 2", "Rat 3", "Rat 4", "Gisela", "Rat 4", "Sylvia", "Rat 1", "Sylvia", "Rat 5", "Gisela", "Rat 4", "Gisela"])
+lines = Array[String](["Screeee!!", "Wait! We don’t mean any harm.", "What business do you have here?", "We’re just looking for a way to leave, the exit is locked.", "There is no way to leave, we’re all stuck here!", "What? How?", "Does she really not know?", "Something’s up with this girl.", "We were all cursed by a witch, she transformed us into this and made it so we couldn’t leave. We’ve been stuck here for weeks now.", "That’s terrible, why would she do that?", "We haven’t a clue.", "Great, witch curse. Well if I know anything about those there should be a way to break it at least.", "We’re open to ideas.", "This seems like more of a human thing, no offense.", "We were all human too you know!", "Well maybe we’re the key to this, we didn’t get turned right? Maybe there’s a reason for that.", "I guess, we’ve tried everything, I’m ready to accept any crazy idea at this point.", "We’ll do our best."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://dubh3tqxsfjb8"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_2bwxe"]
+
+[resource]
+script = ExtResource("1_2bwxe")
+char_name = Array[String](["Gisela", "Gisela", "Sylvia", "Anja", "Sylvia", "Anja", "Gisela", "Anja", "Melanie", "Anja", "Melanie", "Sylvia", "Melanie", "Anja", "Melanie", "Sylvia", "Anja", "Sylvia", "Gisela"])
+lines = Array[String](["Oh hey, I see a key in the bucket, let me pick it up.", "Ow!", "Great, now the furniture is aggressive. It shouldn’t be able to do much though, I can handle a mop.", "Hyah!", "Gah, I hate this place!", "I’ve got more where that came from!", "Wait, are you two people too?", "Anja and Melanie, top two maids in the manor, here to quash whatever wicked scheme you’re cooking up!", "Well I think you’re laying it on ...", "Shush, you are amazing, I am amazing. We are not self deprecating in front of our enemies.", "Okay, sorry.", "If you two clowns are done with your little speech, can you tell us what your god damn deal is.", "Well Helga told us to ...", "Melanie, don’t converse with the enemy.", "Oh, uh, all right.", "*sigh* Well we need that key, do you want to do this the easy way or the hard way?", "Oh I am going to enjoy sweeping the floor with you.", "Well, we tried. Good luck Gisela!", "Sylvia!"])
+metadata/_custom_type_script = "uid://butavhetddgg6"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://bv82pk4nocgho"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_tueqk"]
+
+[resource]
+script = ExtResource("1_tueqk")
+char_name = Array[String](["Gisela", "Brigitte", "Gisela", "Brigitte", "Nadine", "Gisela", "Brigitte", "Gisela", "Brigitte", "Gisela", "Brigitte", "Gisela", "Nadine", "Brigitte", "Gisela", "Brigitte", "Nadine", "Gisela", "Brigitte", "Gisela", "Brigitte", "Gisela", "Brigitte"])
+lines = Array[String](["Brigitte?! What happened?", "I wasn’t strong enough to defeat her.", "Let me have a look at your wounds.", "That feels a bit better.", "You can do healing magic?", "Apparently. Didn’t know I could, but it just popped in my head.", "I’m glad you’re remembering. Do you trust me now?", "I don’t know, but I couldn’t just leave you there injured.", "Heh, there’s the woman I love.", "Do you know more about this curse?", "I know almost everything, but we don’t have the time. Sylvia, she ran off, said she was going to do something to Pippin.", "Pippin?", "Her younger brother.", "I know you don’t have any feelings for me anymore, but can you please protect him? He’s the only family I have left.", "Of course.", "Thank you, the key for the east wing should be around here somewhere. His room is located there.", "I’ll help you find it.", "Thank you Nadine.", "I’m happy to see you made a friend, I knew you would.", "I wish I could know you as well as you seem to know me.", "It’ll come with time. Pippin can fill you in a bit after you find him.", "Of course, we should get going. Time is of the essence.", "Good luck."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

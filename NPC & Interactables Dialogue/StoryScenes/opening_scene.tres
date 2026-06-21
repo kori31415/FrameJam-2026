@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://b8a0uk4qlegtn"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_v4y4r"]
+
+[resource]
+script = ExtResource("1_v4y4r")
+char_name = Array[String](["Sylvia", "Gisela", "Sylvia", "Gisela", "Sylvia", "Gisela", "Sylvia", "Gisela", "Sylvia", "Sylvia", "Gisela", "Sylvia", "Gisela"])
+lines = Array[String](["Gisela, Gisela!", "Urgh, … what happened? Who are you? How do you know my name?", "You don’t remember?", "No, I can’t seem to recall anything.", "Oh, that’s concerning. I’m Sylvia, we’ve been friends for ages. I found you here singing along to some tape, after that you just collapsed.", "A tape? I do remember a tape, … it was special, but I don’t know why. Where is it?", "I don’t remember, I felt an ominous atmosphere there. I wanted to get us both out of there.", "Where are we now?", "I’m not sure, we seem to be in some kind of manor, though seemingly nobody lives here anymore. This looked like an infirmary so I figured it’d be the best place to take care of you.", "Speaking of which, how are you feeling?", "I feel fine, aside from my memories I don’t feel like anything is wrong.", "That’s good, I’ll try to fill you in on everything I know about you, but first we should get out of here.", "All right, sounds like a plan."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

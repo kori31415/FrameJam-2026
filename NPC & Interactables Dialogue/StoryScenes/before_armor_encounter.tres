@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://bu3fmlivmkg5m"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_evfe7"]
+
+[resource]
+script = ExtResource("1_evfe7")
+char_name = Array[String](["Amelia", "Pippin", "Amelia", "Nadine", "Amelia", "Gisela", "Pippin", "Amelia", "Gisela", "Amelia", "Gisela", "Amelia", "Gisela", "Amelia"])
+lines = Array[String](["Halt!", "Amelia!", "You are not allowed to leave this wing with the young master!", "Miss Amelia, Lady Brigitte told us the witch will endanger young master Pippin. We believe he will be safer with her.", "Nonsense. If that’s true, she would come here herself.", "She was injured, she’s not really in a state to roam around the manor right now.", "Yeah! She’s fighting off the witch! We have to help her!", "You two can do that yourselves, no reason to get him involved.", "The witch might still come here, he’ll be safer with us.", "If she does then I will be here to protect him.", "Will you be able to handle her?", "Will you?", "I think so, I know some of her tricks.", "If you really think you’re strong enough, then prove it to me. Show me you’ll be able to protect him!"])
+metadata/_custom_type_script = "uid://butavhetddgg6"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://cqxuletdo7aw2"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_vvmge"]
+
+[resource]
+script = ExtResource("1_vvmge")
+char_name = Array[String](["Nadine", "Gisela", "Nadine", "Gisela", "Nadine", "Gisela", "Nadine", "Gisela"])
+lines = Array[String](["Whew, we really did it, didn’t we. What a hell of a battle that was.", "You seem really excited about this somehow.", "Of course, I never thought I’d experience anything like this. And learning you’re a witch too is the icing on the cake, I think Thea will be excited to hear about it too.", "You’re really gonna keep her company after all this?", "I’m not going to go back on my promise, she’s already had enough people break her trust. Besides having two friends who know magic seems pretty neat.", "You’re taking this really well.", "I had my suspicions. You did heal Lady Brigitte with that magic.", "You got me there."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

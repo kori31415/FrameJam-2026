@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://q162hj5pa2nd"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_axkjd"]
+
+[resource]
+script = ExtResource("1_axkjd")
+char_name = Array[String](["Charlie", "Gisela", "Sylvia", "Gisela", "Sylvia", "Gisela", "Sylvia", "Gisela", "Sylvia", "Gisela", "Sylvia", "Gisela", "Sylvia", "Gisela", "Sylvia", "Gisela", "Sylvia"])
+lines = Array[String](["Screeee!", "Yeah, you better run!", "Well it seems we can add aggressive talking mice to what we’re gonna have to deal with here.", "I think that was a rat.", "Whatever, same thing.", "Well they’re similar, but mice are typically a lot smaller.", "Thanks for the info I guess.", "No problem. I really like animals.", "So you do remember some things.", "Oh, yeah I guess I do.", "Well regardless, seems like these ones aren’t exactly the friendly type.", "I mean we’ve only met one.", "They’re rats Gigi, talking or no, their brains are pretty simple.", "This place is pretty unusual though.", "Just not in any way that benefits us.", "I guess so.", "Let’s just keep looking for keys."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

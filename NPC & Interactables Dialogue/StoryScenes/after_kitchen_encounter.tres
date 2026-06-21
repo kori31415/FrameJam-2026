@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://bxiwhmvi47e5e"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_re1wh"]
+
+[resource]
+script = ExtResource("1_re1wh")
+char_name = Array[String](["Helga", "Gisela", "Ingrid", "Ursula", "Gisela", "Sylvia", "Helga", "Gisela", "Helga", "I'll take what I can get."])
+lines = Array[String](["You sure are strong, seems Amelia’s gonna have to deal with you herself.", "I’d rather avoid more fighting.", "That’s probably going to be rather difficult.", "That’s probably going to be rather difficult.", "I’ll get to the bottom of this, I promise.", "Don’t make promises you can’t keep Gigi. False hope isn’t useful.", "Your friend is right, but I appreciate the thought.", "Do you trust us now?", "I don’t know, you don’t seem malicious at least.", "I’ll take what I can get."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

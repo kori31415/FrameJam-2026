@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://m00v12885bj6"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_larht"]
+
+[resource]
+script = ExtResource("1_larht")
+char_name = Array[String](["Sylvia", "Gisela", "Sylvia", "Charlie", "Gisela", "Charlie", "Gisela", "Charlie", "Gisela", "Sylvia", "Gisela", "Sylvia", "Gisela", "Sylvia", "Gisela"])
+lines = Array[String](["Ack!", "Something wrong?", "Get off me!", "I’m not scared of you wench!", "Get away from my friend you creep!", "Don’t think you’re safe either! I know you two must be behind this!", "What are you talking about?", "Don’t feign ignorance! Screeee!", "Seems like this talking rat isn’t going to leave us alone. What do we do?", "You beat the crap out of him, that's what!", "Me?", "Oh yeah, your amnesia. I’m not a fighter, like at all, you were a beast though, surely some of those instincts must’ve survived.", "Well I hope they start kicking in real soon.", "Need a refresher on how this goes?", "That would be for the best, yeah."])
+metadata/_custom_type_script = "uid://butavhetddgg6"
