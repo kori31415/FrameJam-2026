@@ -4,6 +4,7 @@
 
 [resource]
 script = ExtResource("1_qsivs")
+char_name = Array[String]([""])
 lines = Array[String](["You picked up a Cassette."])
 item_to_give = "Cassette"
 metadata/_custom_type_script = "uid://butavhetddgg6"
