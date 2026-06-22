@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c1mxfy5g3b1fk" path="res://Scenes/tile_map_layer.tscn" id="1_y48h7"]
 [ext_resource type="PackedScene" uid="uid://bpbjgd65itwt5" path="res://Scenes/screen_transition.tscn" id="2_a3hec"]
 [ext_resource type="PackedScene" uid="uid://crk4ngo3d11et" path="res://Scenes/room_loader.tscn" id="3_3sexb"]
+[ext_resource type="PackedScene" uid="uid://dig5h6eefb02t" path="res://Scenes/doorway.tscn" id="4_ow536"]
 
 [node name="West Hall F1" type="Node2D" unique_id=1885685350]
 
@@ -16,3 +17,10 @@ scale = Vector2(4.48, 2)
 [node name="Room Loader" parent="." unique_id=1820529224 instance=ExtResource("3_3sexb")]
 position = Vector2(256, 64)
 scale = Vector2(9.980495, 3.3583019)
+
+[node name="Doorway_Locked" parent="." unique_id=972121199 instance=ExtResource("4_ow536")]
+position = Vector2(272, -16)
+
+[node name="Doorway_Locked2" parent="." unique_id=2025039492 instance=ExtResource("4_ow536")]
+position = Vector2(304, -16)
+scale = Vector2(-1, 1)
