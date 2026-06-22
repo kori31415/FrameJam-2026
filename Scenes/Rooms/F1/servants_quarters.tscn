@@ -2,9 +2,16 @@
 
 [ext_resource type="PackedScene" uid="uid://c1mxfy5g3b1fk" path="res://Scenes/tile_map_layer.tscn" id="1_ywknf"]
 [ext_resource type="Script" uid="uid://ct87blxoqivk6" path="res://Scripts/room_loader.gd" id="2_mns35"]
+[ext_resource type="PackedScene" uid="uid://dyxhb718puvtk" path="res://Scenes/key.tscn" id="3_jfsef"]
+[ext_resource type="Resource" uid="uid://dobullqus0xa" path="res://NPC & Interactables Dialogue/cassette_interact.tres" id="4_bb242"]
+[ext_resource type="Script" uid="uid://cebio1oeah2ie" path="res://Interaction/interaction_area.gd" id="5_3ifiw"]
+[ext_resource type="Resource" uid="uid://b7bhi7havipxj" path="res://NPC & Interactables Dialogue/StoryScenes/servants_quarter.tres" id="6_h8ed0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w67dq"]
 size = Vector2(449, 257)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5scgx"]
+size = Vector2(300.5, 29)
 
 [node name="Servant\'s Quarters" type="Node2D" unique_id=2082426750]
 
@@ -12,6 +19,7 @@ size = Vector2(449, 257)
 tile_map_data = PackedByteArray("AAAAAAAAAAABAAEAAAAAAAEAAAABAAIAAAAAAAIAAAABAAIAAAAAAAMAAAABAAIAAAAAAAQAAAABAAIAAAAAAAUAAAABAAIAAAAAAAYAAAABAAIAAAAAAAcAAAABAAIAAAAAAAgAAAAFAAIAAAABAAAAAAACAAEAAAACAAAAAAACAAEAAAADAAAAAAACAAEAAAAEAAAAAAACAAEAAAAFAAAAAAACAAEAAAAGAAAAAAACAAEAAAAHAAAAAAACAAEAAAAIAAAAAAACAAEAAAAJAAAAAAACAAEAAAAKAAAAAAACAAEAAAALAAAAAAACAAEAAAAMAAAAAAACAAEAAAANAAAAAAACAAEAAAAOAAAAAAADAAEAAAAOAAEAAAADAAIAAAAOAAIAAAADAAIAAAAOAAMAAAADAAIAAAAOAAQAAAADAAIAAAAOAAUAAAADAAIAAAAOAAYAAAADAAIAAAAOAAcAAAADAAIAAAAOAAgAAAAFAAIAAAANAAgAAAACAAMAAAAMAAgAAAAEAAIAAAALAAgAAAAKAAIAABAKAAgAAAAGAAAAAAAJAAgAAAACAAMAAAAIAAgAAAACAAMAAAAHAAgAAAACAAMAAAAGAAgAAAACAAMAAAAFAAgAAAACAAMAAAAEAAgAAAAEAAIAAAADAAgAAAAKAAIAAAACAAgAAAAGAAAAAAABAAgAAAACAAMAAAABAAEAAQAAAAAAAQABAAIAAAAAAAAAAAABAAMAAAAAAAAAAAABAAQAAAAAAAAAAAABAAUAAAAAAAAAAAABAAYAAAAAAAAAAAABAAcAAAAAAAAAAAACAAEAAAAAAAAAAAACAAIAAAAAAAAAAAACAAMAAAAAAAAAAAACAAQAAAAAAAAAAAACAAUAAAAAAAAAAAACAAYAAAAAAAAAAAACAAcAAAAAAAAAAAADAAEAAAAAAAAAAAADAAIAAAAAAAAAAAADAAMAAAAAAAAAAAADAAQAAAAAAAAAAAADAAUAAAAAAAAAAAADAAYAAAAAAAAAAAADAAcAAAAAAAAAAAAEAAEAAAAAAAAAAAAEAAIAAAAAAAAAAAAEAAMAAAAAAAAAAAAEAAQAAAAAAAAAAAAEAAUAAAAAAAAAAAAEAAYAAAAAAAAAAAAEAAcAAAAAAAAAAAAFAAEAAQAAAAAAAQAFAAIAAAAAAAAAAAAFAAMAAAAAAAAAAAAFAAQAAAAAAAAAAAAFAAUAAAAAAAAAAAAFAAYAAAAAAAAAAAAFAAcAAQAAAAAAAQAGAAEAAAAAAAAAAAAGAAIAAAAAAAAAAAAGAAMAAAAAAAAAAAAGAAQAAAAAAAAAAAAGAAUAAAAAAAAAAAAGAAYAAAAAAAAAAAAGAAcAAAAAAAAAAAAHAAEAAAAAAAAAAAAHAAIAAAAAAAAAAAAHAAMAAAAAAAAAAAAHAAQAAAAAAAAAAAAHAAUAAAAAAAAAAAAHAAYAAAAAAAAAAAAHAAcAAAAAAAAAAAAIAAEAAAAAAAAAAAAIAAIAAAAAAAAAAAAIAAMAAAAAAAAAAAAIAAQAAAAAAAAAAAAIAAUAAAAAAAAAAAAIAAYAAAAAAAAAAAAIAAcAAAAAAAAAAAAJAAEAAQAAAAAAAQAJAAIAAAAAAAAAAAAJAAMAAAAAAAAAAAAJAAQAAAAAAAAAAAAJAAUAAAAAAAAAAAAJAAYAAAAAAAAAAAAJAAcAAQAAAAAAAQAKAAEAAAAAAAAAAAAKAAIAAAAAAAAAAAAKAAMAAAAAAAAAAAAKAAQAAAAAAAAAAAAKAAUAAAAAAAAAAAAKAAYAAAAAAAAAAAAKAAcAAAAAAAAAAAALAAEAAAAAAAAAAAALAAIAAAAAAAAAAAALAAMAAAAAAAAAAAALAAQAAAAAAAAAAAALAAUAAAAAAAAAAAALAAYAAAAAAAAAAAALAAcAAAAAAAAAAAAMAAEAAAAAAAAAAAAMAAIAAAAAAAAAAAAMAAMAAAAAAAAAAAAMAAQAAAAAAAAAAAAMAAUAAAAAAAAAAAAMAAYAAAAAAAAAAAAMAAcAAAAAAAAAAAANAAEAAQAAAAAAAQANAAIAAAAAAAAAAAANAAMAAAAAAAAAAAANAAQAAAAAAAAAAAANAAUAAAAAAAAAAAANAAYAAAAAAAAAAAANAAcAAAAAAAAAAAA=")
 
 [node name="room_loader" type="Area2D" parent="." unique_id=1257051036]
+visible = false
 collision_layer = 0
 collision_mask = 8
 script = ExtResource("2_mns35")
@@ -20,6 +28,49 @@ metadata/_custom_type_script = "uid://ct87blxoqivk6"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="room_loader" unique_id=2022191338]
 position = Vector2(239.5, 143.5)
 shape = SubResource("RectangleShape2D_w67dq")
+
+[node name="Rat" parent="." unique_id=1319656411 instance=ExtResource("3_jfsef")]
+position = Vector2(101, 65)
+dialogue = ExtResource("4_bb242")
+item = false
+is_key = false
+
+[node name="Rat2" parent="." unique_id=718028919 instance=ExtResource("3_jfsef")]
+position = Vector2(135, 65)
+dialogue = ExtResource("4_bb242")
+item = false
+is_key = false
+
+[node name="Rat3" parent="." unique_id=364195798 instance=ExtResource("3_jfsef")]
+position = Vector2(65, 101)
+dialogue = ExtResource("4_bb242")
+item = false
+is_key = false
+
+[node name="Rat4" parent="." unique_id=1230153119 instance=ExtResource("3_jfsef")]
+position = Vector2(65, 133)
+dialogue = ExtResource("4_bb242")
+item = false
+is_key = false
+
+[node name="Rat5" parent="." unique_id=2099610451 instance=ExtResource("3_jfsef")]
+position = Vector2(223, 65)
+dialogue = ExtResource("4_bb242")
+item = false
+is_key = false
+
+[node name="InteractionArea" type="StaticBody2D" parent="." unique_id=581587725]
+position = Vector2(241, 209)
+collision_layer = 128
+collision_mask = 128
+script = ExtResource("5_3ifiw")
+dialogue = ExtResource("6_h8ed0")
+is_cutscene = true
+metadata/_custom_type_script = "uid://cebio1oeah2ie"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=337669594]
+position = Vector2(3, 2)
+shape = SubResource("RectangleShape2D_5scgx")
 
 [connection signal="body_entered" from="room_loader" to="room_loader" method="_on_body_entered"]
 [connection signal="body_exited" from="room_loader" to="room_loader" method="_on_body_exited"]

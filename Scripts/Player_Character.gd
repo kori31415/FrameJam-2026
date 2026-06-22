@@ -17,6 +17,11 @@ var can_interact : bool = true
 var can_move : bool = true
 
 func _physics_process(_delta: float) -> void:
+	if interactable_ray_cast.is_colliding() && can_interact:
+		var collider = interactable_ray_cast.get_collider()
+		if collider.is_cutscene && !collider.is_disabled:
+			dialouge_handler()
+	
 	if not moving && can_move:
 		input_direction = Vector2.ZERO
 		if Input.is_action_pressed("Left"):
@@ -69,12 +74,15 @@ func adjust_casts():
 	interactable_ray_cast.force_raycast_update()
 
 func dialouge_handler():
-	can_move = false	
-	can_interact = false
 	var collider = interactable_ray_cast.get_collider()
-	dialogue_controller.set_dialogue(collider.dialogue)
-	if collider.item:
-		collider.queue_free()
-		if collider.is_key:
-			collider.add_key_to_inventory()
-			print(globals.collected_keys)
+	if !collider.is_disabled:
+		can_move = false	
+		can_interact = false
+		dialogue_controller.set_dialogue(collider.dialogue, collider.is_cutscene)
+		if collider.is_cutscene:
+			collider.disable_cutscene()
+		if collider.item:
+			collider.queue_free()
+			if collider.is_key:
+				collider.add_key_to_inventory()
+				print(globals.collected_keys)

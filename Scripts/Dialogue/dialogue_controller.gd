@@ -11,17 +11,18 @@ var current_dialogue : Dialogue
 
 var visible_chars : float
 var current_line : int
+var is_cutscene : bool
 
 func _ready ():
 	close_screen()	
 
-func set_dialogue(dialogue : Dialogue):
+func set_dialogue(dialogue : Dialogue, cutscene: bool):
 	current_dialogue = dialogue
+	is_cutscene = cutscene
 	
 	dialogue_screen.visible = true
 	
 	current_line = -1
-	
 	
 
 func _process (delta : float):
@@ -31,7 +32,7 @@ func _process (delta : float):
 	if not current_dialogue:
 		return
 	
-	if Input.is_action_just_pressed("Interact"):
+	if Input.is_action_just_pressed("Interact") || (is_cutscene && current_line == -1):
 		if len(current_dialogue.lines) == current_line + 1:
 			player.can_move = true
 			player.can_interact = true
