@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://bkoo84b288qfd"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_k18bw"]
+
+[resource]
+script = ExtResource("1_k18bw")
+char_name = Array[String](["Minerva", "Gisela", "Minerva", "Gisela", "Minerva", "Gisela"])
+lines = Array[String](["So you’re saying you don’t remember anything?", "Yep.", "I have trouble believing you, but I guess that doesn’t really matter, does it? Nothing I’m gonna do in this weak little rat body.", "Hey, you could probably inflict some amount of damage if you’re creative about it.", "Don’t patronize me woman.", "Oh, uh, sorry."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

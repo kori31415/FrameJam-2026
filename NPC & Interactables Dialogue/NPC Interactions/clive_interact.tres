@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://d1n7xv7cis7k3"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_80nxj"]
+
+[resource]
+script = ExtResource("1_80nxj")
+char_name = Array[String](["Clive", "Gisela", "Clive", "Gisela", "Clive", "Gisela", "Clive", "Gisela"])
+lines = Array[String](["I assume you were the ones who attacked my dear Charlie.", "He attacked us first.", "He must’ve been onto something then.", "His sole reason was that we were human.", "You have to admit it’s unusual.", "Sure, but to attack us over it? Even if one of us was the witch, could he really hope to take them on? She did kind of curse the whole manor including its most competent personnel.", "You’re right, he would risk his life just to protect us all even when the odds are against him. Oh, he’s so brave.", "(I don’t think we’re gonna get through to this guy.)"])
+metadata/_custom_type_script = "uid://butavhetddgg6"

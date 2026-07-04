@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://78muuw43tw1v"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_i0reh"]
+
+[resource]
+script = ExtResource("1_i0reh")
+char_name = Array[String](["Felix", "Gisela", "Felix", "Gisela", "Felix", "Gisela", "Felix", "Gisela", "Felix", "Felix", "Gisela", "Felix", "Gisela", "Felix"])
+lines = Array[String](["If you’re serious about getting to the bottom of this then I’d be happy to answer any questions you may have.", "Thank you, who are all of you?", "Well we are all just servants of some kind, Tanya’s a maid, Minerva’s a guard, you get the idea. I myself am one of the stablehands of the manor, I haven’t seen the other one around in a while, I wonder where he’s at.", "Were you all turned into rats?", "Most of us were, but a few were turned into objects instead. My hubby’s a lamp now, which is why I want this to be over as soon as possible.", "Oh dear. You must miss him.", "He can still talk, but it’s definitely not great to say the least.", "Do you know who’s in charge here?", "Some lass named Brigitte is the Lady of the house, she’s in charge. Don’t know her personally though, or any of the other important folks around here for that matter. If you want more info on them I suggest you ask around.", "Maybe avoid Clive though, I heard you two beat up Charlie and he is not happy about that.", "We didn’t start it.", "I believe you, Charlie’s an asshole, but Clive is pinning for him hard. His taste in men is questionable to say the least.", "Well in any case, thank you for your help.", "Likewise, the sooner we reverse this the better."])
+metadata/_custom_type_script = "uid://butavhetddgg6"
