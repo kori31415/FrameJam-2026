@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://c4q7mu1x5hqbu"]
+
+[ext_resource type="Script" uid="uid://cebio1oeah2ie" path="res://Interaction/interaction_area.gd" id="1_qaslg"]
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="2_1v7x8"]
+[ext_resource type="Texture2D" uid="uid://frt41cfsrb7x" path="res://Sprites/rat_placeholder.png" id="3_qaslg"]
+
+[sub_resource type="Resource" id="Resource_lc1k7"]
+script = ExtResource("2_1v7x8")
+metadata/_custom_type_script = "uid://butavhetddgg6"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_up4cr"]
+size = Vector2(32, 32)
+
+[node name="Rat" type="StaticBody2D" unique_id=1319656411]
+collision_layer = 128
+collision_mask = 128
+script = ExtResource("1_qaslg")
+dialogue = SubResource("Resource_lc1k7")
+item = true
+is_key = true
+metadata/_custom_type_script = "uid://cebio1oeah2ie"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=645634307]
+position = Vector2(-16, -16)
+shape = SubResource("RectangleShape2D_up4cr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=85812084]
+position = Vector2(-16, -15.999999)
+texture = ExtResource("3_qaslg")
