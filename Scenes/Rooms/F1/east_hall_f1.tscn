@@ -3,6 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://c1mxfy5g3b1fk" path="res://Scenes/tile_map_layer.tscn" id="1_qd1mj"]
 [ext_resource type="Script" uid="uid://ct87blxoqivk6" path="res://Scripts/room_loader.gd" id="2_068c3"]
 [ext_resource type="PackedScene" uid="uid://bjyo36uk7fdm4" path="res://Scenes/Rooms/F1/BroomCloset.tscn" id="3_uf45o"]
+[ext_resource type="PackedScene" uid="uid://coyvww4vie8ft" path="res://Interaction/interaction_area.tscn" id="4_dw2yh"]
+[ext_resource type="Resource" uid="uid://m00v12885bj6" path="res://NPC & Interactables Dialogue/StoryScenes/before_tutorial.tres" id="5_ry65b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qd1mj"]
 size = Vector2(640, 160)
@@ -25,6 +27,12 @@ shape = SubResource("RectangleShape2D_qd1mj")
 
 [node name="BroomCloset" parent="." unique_id=2053537127 instance=ExtResource("3_uf45o")]
 position = Vector2(320, 160)
+
+[node name="interaction_area" parent="." unique_id=999967269 instance=ExtResource("4_dw2yh")]
+position = Vector2(122, 96)
+scale = Vector2(1.4999999, 3.9999998)
+dialogue = ExtResource("5_ry65b")
+is_cutscene = true
 
 [connection signal="body_entered" from="room_loader" to="room_loader" method="_on_body_entered"]
 [connection signal="body_exited" from="room_loader" to="room_loader" method="_on_body_exited"]

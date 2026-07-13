@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://crk4ngo3d11et" path="res://Scenes/room_loader.tscn" id="2_c6usg"]
 [ext_resource type="PackedScene" uid="uid://dyxhb718puvtk" path="res://Scenes/key.tscn" id="3_8lukk"]
 [ext_resource type="Resource" uid="uid://bwmmn6rvulqea" path="res://NPC & Interactables Dialogue/key_f2_collect.tres" id="4_8lukk"]
+[ext_resource type="PackedScene" uid="uid://coyvww4vie8ft" path="res://Interaction/interaction_area.tscn" id="5_3q3g0"]
+[ext_resource type="Resource" uid="uid://byldxuatvf63m" path="res://NPC & Interactables Dialogue/StoryScenes/before_kitchen_encounter.tres" id="6_mc5ob"]
 
 [node name="Kitchen" type="Node2D" unique_id=1286336086]
 
@@ -16,6 +18,12 @@ position = Vector2(128, 32)
 scale = Vector2(4.688922, 10.014402)
 
 [node name="Key2" parent="." unique_id=1319656411 instance=ExtResource("3_8lukk")]
-position = Vector2(184, -160)
+position = Vector2(192, -160)
 dialogue = ExtResource("4_8lukk")
 key_name = "WeWi2"
+
+[node name="interaction_area" parent="." unique_id=999967269 instance=ExtResource("5_3q3g0")]
+position = Vector2(179, -142)
+scale = Vector2(2.785375, 3.3233728)
+dialogue = ExtResource("6_mc5ob")
+is_cutscene = true

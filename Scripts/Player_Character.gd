@@ -85,4 +85,3 @@ func dialouge_handler():
 			collider.queue_free()
 			if collider.is_key:
 				collider.add_key_to_inventory()
-				print(globals.collected_keys)

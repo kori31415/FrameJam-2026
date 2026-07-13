@@ -37,7 +37,7 @@ position = Vector2(1576, 216)
 position = Vector2(8, 88)
 
 [node name="CharacterBody2D" parent="." unique_id=1789930929 instance=ExtResource("10_rf5lr")]
-position = Vector2(888, 8)
+position = Vector2(88, 424)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=139703425]
 position = Vector2(0, 1)

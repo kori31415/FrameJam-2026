@@ -6,3 +6,8 @@ func _ready() -> void:
 		MusicPlayer.load_song("Unsettling")
 	elif MusicPlayer.current_song[3] != "Unsettling":
 		MusicPlayer.load_song("Unsettling")
+	for scene in globals.seen_cutscenes:
+		if scene == null:
+			pass
+		else:
+			scene.disable_cutscene()

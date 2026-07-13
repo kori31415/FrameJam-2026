@@ -8,8 +8,16 @@ class_name InteractionArea
 @export var is_cutscene: bool
 @export var is_disabled: bool
 
+func _process(delta: float) -> void:
+	if key_name in globals.collected_keys:
+		self.queue_free()
+
 var interact : Callable = func():
 	pass
+
+func _ready() -> void:
+	if is_cutscene:
+		self.set_collision_layer_value(1, false)
 
 func add_key_to_inventory():
 	globals.collected_keys.append(key_name)

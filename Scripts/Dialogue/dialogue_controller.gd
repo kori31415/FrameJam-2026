@@ -26,14 +26,20 @@ func set_dialogue(dialogue : Dialogue, cutscene: bool):
 	
 
 func _process (delta : float):
-	visible_chars += 30 * delta
-	dialogue_text.visible_characters = int(visible_chars)
+	if visible_chars <= len(dialogue_text.text):
+		visible_chars += 30 * delta
+		dialogue_text.visible_characters = int(visible_chars)
+	else:
+		visible_chars = len(dialogue_text.text)
 	
 	if not current_dialogue:
 		return
 	
 	if Input.is_action_just_pressed("Interact") || (is_cutscene && current_line == -1):
-		if len(current_dialogue.lines) == current_line + 1:
+		print(len(dialogue_text.text))
+		if len(dialogue_text.text) != int(visible_chars) && current_line != -1:
+			visible_chars = len(dialogue_text.text)
+		elif len(current_dialogue.lines) == current_line + 1:
 			player.can_move = true
 			player.can_interact = true
 			close_screen()

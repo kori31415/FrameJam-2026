@@ -3,6 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://c1mxfy5g3b1fk" path="res://Scenes/tile_map_layer.tscn" id="1_86cei"]
 [ext_resource type="PackedScene" uid="uid://dyxhb718puvtk" path="res://Scenes/key.tscn" id="2_wm7gv"]
 [ext_resource type="Resource" uid="uid://bxx35nn4oxc7f" path="res://NPC & Interactables Dialogue/key_f1ww_collect.tres" id="3_wm7gv"]
+[ext_resource type="PackedScene" uid="uid://coyvww4vie8ft" path="res://Interaction/interaction_area.tscn" id="4_4dsia"]
+[ext_resource type="Resource" uid="uid://dubh3tqxsfjb8" path="res://NPC & Interactables Dialogue/StoryScenes/before_supply_encounter.tres" id="5_db0gq"]
 
 [node name="BroomCloset" type="Node2D" unique_id=2053537127]
 
@@ -14,3 +16,9 @@ tile_map_data = PackedByteArray("AAD9////AAAAAAAAAAD9/wAAAAAAAAAAAAD9/wEAAAAAAAA
 position = Vector2(128, 128)
 dialogue = ExtResource("3_wm7gv")
 key_name = "WeWi1"
+
+[node name="interaction_area" parent="." unique_id=999967269 instance=ExtResource("4_4dsia")]
+position = Vector2(79, 79)
+scale = Vector2(2.9738019, -1.0248832)
+dialogue = ExtResource("5_db0gq")
+is_cutscene = true
