@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://h38ody26s0pm"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_cnwt1"]
+
+[resource]
+script = ExtResource("1_cnwt1")
+char_name = Array[String](["Ivy", "Gisela", "Ivy", "Gisela", "Ivy", "Gisela", "Ivy", "Gisela"])
+lines = Array[String](["We don’t know much about why all this happened, none of us were high on the pecking order.", "Who do you suggest we speak to then?", "The head guard Amelia is probably your best bet.", "Where do we find her?", "She’s still guarding the upstairs rooms, never was one to abandon her duty.", "The upstairs seems to be locked, do you have a key?", "Afraid not, the head maid Helga probably has a spare. She should be somewhere on this floor.", "We’ll go look for her then, thank you."])
+metadata/_custom_type_script = "uid://butavhetddgg6"

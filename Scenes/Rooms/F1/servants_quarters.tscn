@@ -2,10 +2,14 @@
 
 [ext_resource type="PackedScene" uid="uid://c1mxfy5g3b1fk" path="res://Scenes/tile_map_layer.tscn" id="1_ywknf"]
 [ext_resource type="Script" uid="uid://ct87blxoqivk6" path="res://Scripts/room_loader.gd" id="2_mns35"]
-[ext_resource type="PackedScene" uid="uid://dyxhb718puvtk" path="res://Scenes/key.tscn" id="3_jfsef"]
-[ext_resource type="Resource" uid="uid://dobullqus0xa" path="res://NPC & Interactables Dialogue/cassette_interact.tres" id="4_bb242"]
 [ext_resource type="Script" uid="uid://cebio1oeah2ie" path="res://Interaction/interaction_area.gd" id="5_3ifiw"]
+[ext_resource type="PackedScene" uid="uid://c4q7mu1x5hqbu" path="res://Scenes/rat.tscn" id="5_fruib"]
+[ext_resource type="Resource" uid="uid://78muuw43tw1v" path="res://NPC & Interactables Dialogue/NPC Interactions/felix_interact.tres" id="6_gypnv"]
 [ext_resource type="Resource" uid="uid://b7bhi7havipxj" path="res://NPC & Interactables Dialogue/StoryScenes/servants_quarter.tres" id="6_h8ed0"]
+[ext_resource type="Resource" uid="uid://cig2unaj765a8" path="res://NPC & Interactables Dialogue/NPC Interactions/tanya_interact.tres" id="7_ep6ux"]
+[ext_resource type="Resource" uid="uid://d1n7xv7cis7k3" path="res://NPC & Interactables Dialogue/NPC Interactions/clive_interact.tres" id="8_6p5of"]
+[ext_resource type="Resource" uid="uid://h38ody26s0pm" path="res://NPC & Interactables Dialogue/NPC Interactions/ivy_interact.tres" id="9_hfrvo"]
+[ext_resource type="Resource" uid="uid://bkoo84b288qfd" path="res://NPC & Interactables Dialogue/NPC Interactions/minerva_interact.tres" id="10_e4dhb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w67dq"]
 size = Vector2(449, 257)
@@ -29,36 +33,6 @@ metadata/_custom_type_script = "uid://ct87blxoqivk6"
 position = Vector2(239.5, 143.5)
 shape = SubResource("RectangleShape2D_w67dq")
 
-[node name="Rat" parent="." unique_id=1319656411 instance=ExtResource("3_jfsef")]
-position = Vector2(101, 65)
-dialogue = ExtResource("4_bb242")
-item = false
-is_key = false
-
-[node name="Rat2" parent="." unique_id=718028919 instance=ExtResource("3_jfsef")]
-position = Vector2(135, 65)
-dialogue = ExtResource("4_bb242")
-item = false
-is_key = false
-
-[node name="Rat3" parent="." unique_id=364195798 instance=ExtResource("3_jfsef")]
-position = Vector2(65, 101)
-dialogue = ExtResource("4_bb242")
-item = false
-is_key = false
-
-[node name="Rat4" parent="." unique_id=1230153119 instance=ExtResource("3_jfsef")]
-position = Vector2(65, 133)
-dialogue = ExtResource("4_bb242")
-item = false
-is_key = false
-
-[node name="Rat5" parent="." unique_id=2099610451 instance=ExtResource("3_jfsef")]
-position = Vector2(223, 65)
-dialogue = ExtResource("4_bb242")
-item = false
-is_key = false
-
 [node name="InteractionArea" type="StaticBody2D" parent="." unique_id=581587725]
 position = Vector2(241, 209)
 collision_layer = 128
@@ -71,6 +45,36 @@ metadata/_custom_type_script = "uid://cebio1oeah2ie"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=337669594]
 position = Vector2(3, 2)
 shape = SubResource("RectangleShape2D_5scgx")
+
+[node name="Felix" parent="." unique_id=1319656411 instance=ExtResource("5_fruib")]
+position = Vector2(432, 190)
+dialogue = ExtResource("6_gypnv")
+item = false
+is_key = false
+
+[node name="Tanya" parent="." unique_id=333638847 instance=ExtResource("5_fruib")]
+position = Vector2(228, 64)
+dialogue = ExtResource("7_ep6ux")
+item = false
+is_key = false
+
+[node name="Clive" parent="." unique_id=1639638978 instance=ExtResource("5_fruib")]
+position = Vector2(393, 96)
+dialogue = ExtResource("8_6p5of")
+item = false
+is_key = false
+
+[node name="Ivy" parent="." unique_id=515946639 instance=ExtResource("5_fruib")]
+position = Vector2(272, 64)
+dialogue = ExtResource("9_hfrvo")
+item = false
+is_key = false
+
+[node name="Minerva" parent="." unique_id=2034055817 instance=ExtResource("5_fruib")]
+position = Vector2(117, 102)
+dialogue = ExtResource("10_e4dhb")
+item = false
+is_key = false
 
 [connection signal="body_entered" from="room_loader" to="room_loader" method="_on_body_entered"]
 [connection signal="body_exited" from="room_loader" to="room_loader" method="_on_body_exited"]

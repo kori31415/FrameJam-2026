@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://cig2unaj765a8"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_gmr5c"]
+
+[resource]
+script = ExtResource("1_gmr5c")
+char_name = Array[String](["Tanya", "Tanya", "Tanya"])
+lines = Array[String](["I’ve barely seen Lady Brigitte or Captain Amelia around since the curse hit. They used to be a common sight before.", "Brigitte would take an effort to talk to almost everyone. Amelia’s more reserved, but she does seem to have some close bonds here, her and Helga spend so much time together, they’re practically roommates.", "Things aren’t really the same without them, I’m worried about how they’re holding up."])
+metadata/_custom_type_script = "uid://butavhetddgg6"
