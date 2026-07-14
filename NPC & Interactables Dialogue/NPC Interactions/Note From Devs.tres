@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://40tlwkejy0de"]
+
+[ext_resource type="Script" uid="uid://butavhetddgg6" path="res://Scripts/Dialogue/dialogue.gd" id="1_rbukx"]
+
+[resource]
+script = ExtResource("1_rbukx")
+char_name = Array[String](["Devs", "Devs", "Devs"])
+lines = Array[String](["Welcome and thank you for checking out My Flower!", "This project is unfinished and may be finished by our team at a later date.", "For now enjoy the content that is included here as well as the additional content made by parts of our team on the Itch page."])
+metadata/_custom_type_script = "uid://butavhetddgg6"
